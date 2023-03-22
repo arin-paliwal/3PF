@@ -1,4 +1,4 @@
-import {React,Suspense,useEffect,useState} from 'react';
+import {Suspense,useEffect,useState} from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls,Preload,useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
@@ -8,8 +8,8 @@ const Computers = () => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black"/>
-      <pintLight intensity={1}/>
-      <primitive object={computer.scene}/>
+      <pointLight intensity={1} />
+      <primitive object={computer.scene} />
     </mesh>
   )
 }
@@ -24,10 +24,11 @@ const ComputersCanvas=()=>{
         <OrbitControls enableZoom={false}
         // enabling rotation around specific access
         maxPolarAngle={Math.PI/2}
-        minPolarAngle={Math/PI/2}
+        minPolarAngle={Math.PI/2}
         />
-        <Computer
+        <Computers/>
       </Suspense>
+      <Preload all/>
     </Canvas>
   )
 }
