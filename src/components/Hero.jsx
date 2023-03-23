@@ -2,25 +2,65 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import {ComputersCanvas} from './canvas'
+import {useState,useEffect} from 'react';
 const Hero = () => {
+  const [loopNum,setLoopNum]=useState(0);
+  const [isDeleting,setIsDeleting]=useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(100);
+  const period=500;
+
+  useEffect(()=>{
+    let ticker=setInterval(()=>{
+      tick();
+    },delta)
+    return ()=>{clearInterval(ticker)};
+  },[text])
+
+  const tick=()=>{
+    let i=loopNum%toRotate.length;
+    let fullText=toRotate[i];
+    let updatedText=isDeleting?fullText.substring(0,text.length-1):fullText.substring(0,text.length+1);
+    setText(updatedText);
+    if(isDeleting){
+      setDelta(prevDelta=>prevDelta/2);
+    }
+    if(!isDeleting && updatedText===fullText){
+      setIsDeleting(true);
+      setDelta(period);
+    }
+    else if(isDeleting && updatedText===''){
+      setIsDeleting(false);
+      setLoopNum(loopNum+1);
+      setDelta(100);
+    }
+  }
+
+  const toRotate=["Web Developer","Programmer","UI/UX Desginer"];
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] left-[-150px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           {/* for rounded ball */}
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          {/* <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" /> */}
         </div>
+
+
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Arin Paliwal</span>
+            Hi, I'm <span className="text-[#7149C6]">Arin Paliwal</span>
           </h1>
           <p className={`${styles.heroSubText}mt-2 text-white-100`}>
-            I develop web applications using modern technologies.
+            <span>
+              {text}
+            </span>
           </p>
         </div>
+
+
       </div>
       <ComputersCanvas />
     </section>
