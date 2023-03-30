@@ -2,6 +2,7 @@ import {
     mobile,
     backend,
     creator,
+    defaultProjectIcon,
     web,
     MMS,
     javascript,
@@ -20,10 +21,12 @@ import {
     starbucks,
     psitlogo,
     tesla,
+    todolist,
     shopify,
     carrent,
     jobit,
     tripguide,
+    textflow,
     threejs,
 } from "../assets";
 
@@ -34,7 +37,7 @@ export const navLinks = [
     },
     {
         id: "work",
-        title: "Work",
+        title: "Education",
     },
     {
         id: "contact",
@@ -44,19 +47,19 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Full Stack Web Development",
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Data Structures & Algorithms",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "3D Models",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "UI/UX Designing",
         icon: creator,
     },
 ];
@@ -121,7 +124,7 @@ const experiences = [
         title: "Bachelor of Technology",
         company_name: "Pranveer Singh Institute of Technology",
         icon: psitlogo,
-        iconBg: "#383E56",
+        iconBg: "#FFFFFF",
         date: "May 2021 - Current",
         points: [
             "Persuing Engineering in Computer Science with specialization in Artificial Intelligence & Machine Learning.",
@@ -134,7 +137,7 @@ const experiences = [
         title: "Intermediate",
         company_name: "Mercy Memorial School",
         icon: MMS,
-        iconBg: "#E6DEDD",
+        iconBg: "#FFFFFF",
         date: "May 2009 - May 2019",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -147,7 +150,7 @@ const experiences = [
         title: "High School",
         company_name: "Mercy Memorial School",
         icon: MMS,
-        iconBg: "#383E56",
+        iconBg: "#FFFFFF",
         date: "May 2019 - May 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -200,9 +203,9 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Text Flow",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Text Flow application is a real-time messaging application built using the MERN stack (MongoDB, Express, React, Node.js) that allows users to send and receive messages in a chat interface. It has minimalistic User Interface and uses websockets for real-time communication between users.",
         tags: [
             {
                 name: "react",
@@ -213,54 +216,62 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "socket.io",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "express-js",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: textflow,
+        source_code_link: "https://github.com/arin-paliwal/Text-Flow",
     },
     {
-        name: "Job IT",
+        name: "ChatVibe",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "ChatVibe is a web application that allows users to interact with each other and share content. It include user profiles, messaging, commenting, liking, sharing, and creating or joining interest groups. It is using a MERN Technology with Modern UI.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "material-ui",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "nodejs",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: defaultProjectIcon,
+        source_code_link: "https://github.com/arin-paliwal/ChatVibe",
     },
     {
-        name: "Trip Guide",
+        name: "To-Do App",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "An Web Application that allows users to add, edit, and delete tasks they want to work on, and also mark tasks as complete without deleting them. It offers CRUD operations & is styled by Material-UI",
         tags: [
             {
-                name: "nextjs",
+                name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "material-ui",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "crud",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: todolist,
+        source_code_link: "https://github.com/arin-paliwal/To-Do-List",
     },
 ];
 
