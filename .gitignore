@@ -24,4 +24,4 @@ assets
 *.njsproj
 *.sln
 *.sw?
-Contact.jsx
+/src/components/Contact.jsx
