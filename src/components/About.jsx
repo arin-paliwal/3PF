@@ -56,7 +56,7 @@ const About = () => {
       </motion.p>
       <br></br>
       <br></br>
-      <div classname="mt-50">
+      <div className="mt-50">
         <p className={styles.heroHeadText}>I'm into...</p>
       </div>
       <div className="mt-20 flex flex-wrap gap-10">

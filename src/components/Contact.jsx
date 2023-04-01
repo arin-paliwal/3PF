@@ -1,22 +1,56 @@
-import React from 'react';
-import { useState,useRef } from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef=useRef();
+  const formRef = useRef();
   const [form, setForm] = useState({
-    name:'',
-    email:'',
-    message:'',
+    name: "",
+    email: "",
+    message: "",
   });
   const [loading, setLoading] = useState(false);
-  const handleChange=(e)=>{}
-  const handleSubmit=(e)={}
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    // template_mcdy49g
+    // service_bowkbzn
+    // 9COL7dEf2g73n4nI8
+    emailjs.send(
+      "service_bowkbzn",
+      "template_mcdy49g",
+      {
+        form_name: form.name,
+        to_name: "Arin Paliwal",
+        from_email: form.email,
+        to_email: "paliwalarin09@gmail.com",
+      },
+      "9COL7dEf2g73n4nI8"
+    ) 
+    .then(()=>{
+      setLoading(false);
+      alert('Thank You ! I will get back to you as soon as possible');
+      setForm({
+        name:'',
+        email:'',
+        message:''
+      })
+    },(error)=>{
+      setLoading(false)
+      console.log(error);
+      alert('Email Not Sent');
+    }
+    )
+  };
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
@@ -73,11 +107,14 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-      <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
-        <EarthCanvas/>
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas />
       </motion.div>
     </div>
   );
-}
+};
 
-export default SectionWrapper(Contact,"contact");
+export default SectionWrapper(Contact, "contact");
