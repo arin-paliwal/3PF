@@ -7,8 +7,8 @@ const Hero = () => {
   const [loopNum,setLoopNum]=useState(0);
   const [isDeleting,setIsDeleting]=useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(100);
-  const period=500;
+  const [delta, setDelta] = useState(80);
+  const period=400;
 
   useEffect(()=>{
     let ticker=setInterval(()=>{
@@ -32,11 +32,11 @@ const Hero = () => {
     else if(isDeleting && updatedText===''){
       setIsDeleting(false);
       setLoopNum(loopNum+1);
-      setDelta(100);
+      setDelta(80);
     }
   }
 
-  const toRotate=["Web Developer","Programmer","UI/UX Desginer"];
+  const toRotate=["Web Development","DSA Programming","UI/UX Desgining","3D Models"];
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -48,33 +48,33 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" /> */}
         </div>
 
-
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#7149C6]">Arin Paliwal</span>
+            <br />
           </h1>
+          <div className="text-[20px] text-[#7149C6]">I'm working on :</div>
           <p className={`${styles.heroSubText}mt-2 text-white-100`}>
-            <span>
-              {text}
-            </span>
+            <span>{text}</span>
           </p>
         </div>
-       </div>
+      </div>
       <ComputersCanvas />
       {/* for scrolling animation */}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w=[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div animate={{
-              y:[0,24,0] 
-            }}
-            transition={{
-              duration:1.5,
-              repeat:Infinity,
-              repeatType:'loop'
-            }}
-            className="w-3 h-3 rounded-full bg-secondary mb-1"
-              />
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w=[35px] h-[60px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{
+                y: [0, 15, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-1.5 h-3 rounded-full bg-secondary mb-1"
+            />
           </div>
         </a>
       </div>
