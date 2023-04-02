@@ -5,9 +5,11 @@ import {
     defaultProjectIcon,
     web,
     MMS,
+    drive,
     javascript,
     typescript,
     html,
+    comm,
     css,
     reactjs,
     redux,
@@ -26,6 +28,7 @@ import {
     carrent,
     jobit,
     tripguide,
+    webd, dsapython, a3d,
     textflow,
     threejs,
 } from "../assets";
@@ -36,8 +39,20 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
+        id: "education",
         title: "Education",
+    },
+    {
+        id: "technologies",
+        title: "Tech",
+    },
+    {
+        id: "projects",
+        title: "Projects",
+    },
+    {
+        id: "training&certificate",
+        title: "Training",
     },
     {
         id: "contact",
@@ -176,28 +191,30 @@ const experiences = [
 
 const testimonials = [
     {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+        issuer: "IIT Kharagpur",
+        course: "Communication",
+        image:comm,
+        link:"https://drive.google.com/file/d/1BEj-biffh7b8LKiKKpT115LE-8-wFXlx/view?usp=sharing"
     },
     {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+        issuer: "Udemy",
+        course: "Full Stack Web Development",
+        image: webd,
     },
     {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+        issuer: "LinkedIn",
+        course: "3D Models",
+        image: a3d,
+    },
+    {
+        issuer: "LinkedIn",
+        course: "Data Structures & Algorithms in Java",
+        image: defaultProjectIcon,
+    },
+    {
+        issuer: "Infosys",
+        course: "Data Structures & Algorithms in Python",
+        image: dsapython,
     },
 ];
 

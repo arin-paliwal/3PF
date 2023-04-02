@@ -46,10 +46,10 @@ const Works = () => {
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.heroHeadText}>Projects.</h2>
       </motion.div>
-      <div className="w-full flex">
+      <div className="w-full flex max-w-[3xl]">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary max-w-[3xl] text-[17px] leading-[30px]"
+          className="mt-3 text-secondary max-w-[2xl] text-[17px] leading-[30px]"
         >
           As I showcase my projects, I am excited to share the culmination of my
           hard work and dedication to the field of technology. Through these
@@ -64,17 +64,13 @@ const Works = () => {
           ideas and push the boundaries of what is possible with technology.
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project,index)=>(
-          <ProjectCard
-          key={`project-${index}`}
-          index={index}
-          {...project}
-          />
+      <div className="mt-20 flex flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
   );
 }
 
-export default SectionWrapper(Works,"");
+export default SectionWrapper(Works, "projects");

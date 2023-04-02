@@ -54,13 +54,9 @@ const Experience = () => {
       </div>
       <br/>
       <div>
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Knowledge</p>
-          <h2 className={styles.heroHeadText}>Technologies.</h2>
-        </motion.div>
       </div>
     </>
   );
 }
 
-export default SectionWrapper(Experience,"work");
+export default SectionWrapper(Experience,"education");
