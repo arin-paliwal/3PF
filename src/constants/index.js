@@ -17,6 +17,7 @@ import {
     nodejs,
     mongodb,
     git,
+    java, python, webdevel, coding, uiux, a3dmodel,
     figma,
     docker,
     meta,
@@ -28,7 +29,7 @@ import {
     carrent,
     jobit,
     tripguide,
-    webd, dsapython, a3d,
+    webd, dsapython,dsa, a3d,
     textflow,
     threejs,
 } from "../assets";
@@ -63,20 +64,21 @@ export const navLinks = [
 const services = [
     {
         title: "Full Stack Web Development",
-        icon: web,
+        icon: webdevel,
     },
     {
-        title: "Data Structures & Algorithms",
-        icon: mobile,
+        title: "Data Strcutures & Algorithms",
+        icon: dsa,
     },
     {
-        title: "3D Models",
-        icon: backend,
+        title: "Machine Learning",
+        icon: coding,
     },
     {
-        title: "UI/UX Designing",
-        icon: creator,
+        title: "3D Models & Designing",
+        icon: uiux,
     },
+
 ];
 
 const technologies = [
@@ -85,8 +87,8 @@ const technologies = [
         icon: html,
     },
     {
-        name: "CSS 3",
-        icon: css,
+        name: "java",
+        icon: java,
     },
     {
         name: "JavaScript",
@@ -113,6 +115,10 @@ const technologies = [
         icon: nodejs,
     },
     {
+        name: "python",
+        icon: python
+    },
+    {
         name: "MongoDB",
         icon: mongodb,
     },
@@ -120,18 +126,31 @@ const technologies = [
         name: "Three JS",
         icon: threejs,
     },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
+    // {
+    //     name: "git",
+    //     icon: git,
+    // },
+    // {
+    //     name: "figma",
+    //     icon: figma,
+    // },
     {
         name: "docker",
         icon: docker,
     },
+
+    // {
+    // //     name: "machineLearning",
+    // //     icon: coding,
+    // // },
+    // // {
+    // //     name: "Java",
+    // //     icon: java,
+    // // },
+    // // {
+    // //     name: "Python",
+    // //     icon: python,
+    // },
 ];
 
 const experiences = [
@@ -143,9 +162,9 @@ const experiences = [
         date: "May 2021 - Current",
         points: [
             "Persuing Engineering in Computer Science with specialization in Artificial Intelligence & Machine Learning.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Actively participating in extracurricular activities related to computer science, such as hackathons, coding competitions, or technology Clubs.",
+            "I'm excited about the possibilities and opportunities that a career in computer science engineering can offer, and eager to continue learning and growing in this field."
+            ,
         ],
     },
     {
@@ -155,10 +174,9 @@ const experiences = [
         iconBg: "#FFFFFF",
         date: "May 2009 - May 2019",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Improved my knowledge about Computer Science & Programming.",
+            "Learned to be more independent and responsible, as you had to manage your own time and prioritize your studies and activities.",
+            "Gained confidence in your abilities and strengths, and developed a strong foundation for further academic and personal growth",
         ],
     },
     {
@@ -168,10 +186,9 @@ const experiences = [
         iconBg: "#FFFFFF",
         date: "May 2019 - May 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Enriched my knowledge of Java Programming Language & Computer System.",
+            "Developed a passion for a Comuter Science and Software Development, and started exploring different career options or higher education opportunities.",
+            "Implemented various basic HTML CSS JS Sites",
         ],
     },
     // {
