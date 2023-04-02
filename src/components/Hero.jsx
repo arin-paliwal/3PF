@@ -37,6 +37,9 @@ const Hero = () => {
   }
 
   const toRotate=["Web Development","DSA Programming","UI/UX Desgining","3D Models"];
+
+
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -53,7 +56,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#7149C6]">Arin Paliwal</span>
             <br />
           </h1>
-          <div className="text-[20px] text-[#7149C6]">I'm working on :</div>
+          <div className="text-[20px] text-secondary">I'm working on :</div>
           <p className={`${styles.heroSubText}mt-2 text-white-100`}>
             <span>{text}</span>
           </p>
