@@ -227,7 +227,7 @@ const testimonials = [
     {
         issuer: "LinkedIn",
         course: "Data Structures & Algorithms in Java",
-        image: defaultProjectIcon,
+        image: dsajava,
     },
     {
         issuer: "Infosys",
