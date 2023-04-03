@@ -9,6 +9,7 @@ import {
     javascript,
     typescript,
     html,
+    dsajava,
     comm,
     css,
     reactjs,
