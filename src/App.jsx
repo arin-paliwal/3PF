@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import {
   About,
   Contact,
@@ -12,13 +12,12 @@ import {
 } from "./components";
 const App = () => {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
-        {/* <StarsCanvas /> */}
         <About />
         <Experience />
         <Tech />
@@ -29,7 +28,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 };
 
