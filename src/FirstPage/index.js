@@ -35,22 +35,26 @@
 //     threejs,
 // } from "../assets";
 
-export const navLinks = [
+const navLinks = [
     {
         // id: "about",
         title: "Instargram",
+        link:""
     },
     {
-        id: "education",
+        // id: "education",
         title: "Facebook",
+        link: ""
     },
     {
-        id: "technologies",
+        // id: "technologies",
         title: "Github",
+        link: ""
     },
     {
-        id: "projects",
+        // id: "projects",
         title: "Discord",
+        link: ""
     },
     // {
     //     id: "training&certificate",
@@ -311,3 +315,4 @@ export const navLinks = [
 // ];
 
 // export { services, technologies, experiences, testimonials, projects };
+export default {navLinks};
