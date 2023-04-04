@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Router, useNavigate } from 'react-router-do
 import App from '../App';
 import fplogo from './fplogo.png'
 import { styles } from '../styles';
-import particles from './particles.css'
+
 
 const Intro = () => {
 
@@ -50,18 +50,12 @@ const toRotate = [
   "UI/UX Desgining",
   "3D Models",
 ];
-
-
-
-
   return (
-    <div className="particles">
       <div className={`${styles.paddingX}`}>
         <div className={`flex items-center justify-start py-5 gap-7`}>
           <img src={fplogo} className="object-contain w-20 h-20"></img>
           <span className={`${styles.heroHeadText}`}>
-            Hi, I'm{" "}
-            <span className="text-[#986023]">&nbsp;Arin Paliwal</span>
+            Hi, I'm <span className="text-[#986023]">&nbsp;Arin Paliwal</span>
           </span>
         </div>
         <div className="text-[20px] text-secondary">I'm working on :</div>
@@ -69,7 +63,6 @@ const toRotate = [
           <span>{text}</span>
         </p>
       </div>
-    </div>
   );
 }
 
