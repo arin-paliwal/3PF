@@ -59,8 +59,9 @@ const toRotate = [
       <div className={`${styles.paddingX}`}>
         <div className={`flex items-center justify-start py-5 gap-7`}>
           <img src={fplogo} className="object-contain w-20 h-20"></img>
-          <span className={`${styles.heroHeadText} text-white`}>
-            Hi I,m Arin Paliwal
+          <span className={`${styles.heroHeadText}`}>
+            Hi, I'm{" "}
+            <span className="text-[#986023]"> &nbsp;&nbsp;Arin Paliwal</span>
           </span>
         </div>
         <div className="text-[20px] text-secondary">I'm working on :</div>
