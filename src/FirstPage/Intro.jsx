@@ -61,7 +61,7 @@ const toRotate = [
           <img src={fplogo} className="object-contain w-20 h-20"></img>
           <span className={`${styles.heroHeadText}`}>
             Hi, I'm{" "}
-            <span className="text-[#986023]"> &nbsp;&nbsp;Arin Paliwal</span>
+            <span className="text-[#986023]">&nbsp;Arin Paliwal</span>
           </span>
         </div>
         <div className="text-[20px] text-secondary">I'm working on :</div>

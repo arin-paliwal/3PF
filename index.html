@@ -2,12 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/titlelogo.png"/>
+    <link rel="icon" type="image/svg+xml" href="/titlelogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arin Paliwal</title>
+    <title>Arin | Portfolio</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      let activeTitle = "Welcome to my Portfolio";
+      let inactiveTitle = "Arin Paliwal | Portfolio";
+      document.title = activeTitle;
+      window.addEventListener("blur", (e) => {
+        document.title = inactiveTitle;
+      });
+      window.addEventListener("focus", (e) => {
+        document.title = activeTitle;
+      });
+    </script>
   </body>
 </html>
