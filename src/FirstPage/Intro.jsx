@@ -54,10 +54,17 @@ const toRotate = [
 
 
   return (
-    <div className='flex items-center py-5 gap-7'>
-      <img src={fplogo} className='object-contain w-20 h-20'></img>
-      <span>Hi I,m Arin Paliwal</span>
-      <div>{text}</div>
+    <div className={`${styles.paddingX}`}>
+      <div className={ `flex items-center justify-start py-5 gap-7`}>
+        <img src={fplogo} className="object-contain w-20 h-20"></img>
+        <span className={`${styles.heroHeadText} text-white`}>
+          Hi I,m Arin Paliwal
+        </span>
+      </div>
+      <div className="text-[20px] text-secondary">I'm working on :</div>
+      <p className={`${styles.heroSubText}mt-2 text-white-100`}>
+        <span>{text}</span>
+      </p>
     </div>
   );
 }
