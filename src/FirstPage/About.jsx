@@ -6,6 +6,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { StarsCanvas } from "../components/canvas";
+import { Stars } from "@react-three/drei";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -77,12 +78,12 @@ const About = () => {
   ];
 
   return (
-    <>
+    <div>
+      {/* <StarsCanvas/> */}
       <motion.div
         variants={textVariant()}
         className="relative w-full h-full flex-col"
       >
-        <StarsCanvas/>
         <br />
         <p className={`${styles.heroSubText} top-[150px]`}>
           My name is Arin Paliwal
@@ -96,7 +97,7 @@ const About = () => {
           {text}
         </h2>
       </motion.div>
-    </>
+    </div>
   );
 };
 
