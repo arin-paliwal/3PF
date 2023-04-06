@@ -45,11 +45,9 @@ const Hero = () => {
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
-        
-
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#986023]">Arin Paliwal</span>
+            Hi, I'm <span className="text-[#da5923]">Arin Paliwal</span>
             <br />
           </h1>
           <div className="text-[20px] text-secondary">I'm working on :</div>

@@ -31,20 +31,20 @@ const Introduction = () => {
         options={{
           particles: {
             number: {
-              value: 217,
+              value: 150,
               density: {
                 enable: true,
-                value_area: 1102.796376526191,
+                value_area: 1100,
               },
             },
             color: {
               value: "#ffffff",
             },
             shape: {
-              type: "edge",
+              type: "circle",
               stroke: {
-                width: 5,
-                color: "#000000",
+                width: 2,
+                color: "#da5923",
               },
               polygon: {
                 nb_sides: 5,
@@ -66,7 +66,7 @@ const Introduction = () => {
               },
             },
             size: {
-              value: 3,
+              value: 2,
               random: true,
               anim: {
                 enable: false,
@@ -84,11 +84,11 @@ const Introduction = () => {
             },
             move: {
               enable: true,
-              speed: 6,
+              speed: 1,
               direction: "none",
               random: false,
               straight: false,
-              out_mode: "out",
+              out_mode: "bounce",
               bounce: false,
               attract: {
                 enable: false,
@@ -125,7 +125,7 @@ const Introduction = () => {
                 speed: 3,
               },
               repulse: {
-                distance: 200,
+                distance: 70,
                 duration: 0.4,
               },
               push: {
