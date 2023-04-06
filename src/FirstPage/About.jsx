@@ -89,7 +89,7 @@ const About = () => {
           My name is Arin Paliwal
         </p>
         <p className={` ${styles.heroSubText}top-[50px] text-secondary`}>
-          and, I'm into
+          I'm into
         </p>
         <h2
           className={`${styles.heroHeadText} absolute inset-0 top-[120px]  mx-auto flex flex-row items-start`}

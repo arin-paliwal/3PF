@@ -8,11 +8,13 @@ import { StarsCanvas } from "../components";
 const Introduction = () => {
   return (
     <>
-      <StarsCanvas />
-      <div className="relative z-0">
-        <div className="bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <About />
+      {/* <StarsCanvas /> */}
+      <div id='particles-js'>
+        <div className="relative z-0">
+          <div className="bg-cover bg-no-repeat bg-center">
+            <Navbar />
+            <About />
+          </div>
         </div>
       </div>
     </>
