@@ -44,7 +44,7 @@ const Navbar = () => {
           <img src={fplogo} alt="logo" className="w-20 h-20 object-contain" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <p className="text-white text-[29px] font-bold cursor-pointer gap-15 flex">
-            Welcome to my Portfolio &nbsp;
+            {/* Welcome to my Portfolio &nbsp; */}
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
