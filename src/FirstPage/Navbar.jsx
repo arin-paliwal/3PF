@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "./constants/index.js";
 import { logo, menu, close } from "../assets";
-import fplogo from "../FirstPage/fplogo.png";
+import fplogo from "../FirstPage/fplogo.svg";
 import SectionWrapper from "./SectionWrapper";
 const Navbar = () => {
   const [active, setActive] = useState("");
