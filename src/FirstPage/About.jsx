@@ -6,6 +6,7 @@ import Particles from "react-tsparticles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import fplogo from './fplogo.svg'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -82,20 +83,14 @@ const About = () => {
 
   return (
     <div>
-      {/* <StarsCanvas/> */}
-      <motion.div
-        variants={textVariant()}
-        className="relative w-full h-full flex-col"
-      >
+      <motion.div variants={textVariant()} className="relative w-full h-full">
         <br />
-        <p className={`${styles.heroSubText} top-[150px]`}>
-          My name is Arin Paliwal
-        </p>
-        <p className={` ${styles.heroSubText}top-[50px] text-secondary`}>
-          I'm into
-        </p>
+        {/* <p className={`${styles.heroSubText} top-[150px]`}>
+          My name is Arin Paliwal */}
+        {/* </p> */}
+        <p className={` ${styles.heroSubText} text-secondary`}>I'm into</p>
         <h2
-          className={`${styles.heroHeadText} absolute inset-0 top-[120px]  mx-auto flex flex-row items-start`}
+          className={`${styles.heroHeadText} absolute inset-0 top-[50px]  mx-auto flex flex-row items-start`}
         >
           {text}
         </h2>

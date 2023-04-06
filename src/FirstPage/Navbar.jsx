@@ -41,27 +41,30 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={fplogo} alt="logo" className="w-20 h-20 object-contain" />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <p className="text-white text-[29px] font-bold cursor-pointer gap-15 flex">
-            {/* Welcome to my Portfolio &nbsp; */}
+          <p className={`text-[18px] top-[150px] text-secondary ${styles.heroSubText}`}>
+            Hi, My name is Arin Paliwal
           </p>
+          {/* <img src={fplogo} alt="logo" className="w-20 h-20 object-contain" /> */}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {/* <p className="text-white text-[29px] font-bold cursor-pointer gap-15 flex">
+            Welcome to my Portfolio &nbsp;
+          </p> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
-            {navLinks.map((nav) => (
-              <li
-                Link
-                to={nav.id}
-                className={`${
-                  active === nav.title ? "text-white" : "text-secondary"
-                }
-              hover:text-white text-[18px]
+          {navLinks.map((nav) => (
+            <li
+              Link
+              to={nav.id}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              }
+              hover:text-white
               font-medium cursor-pointer`}
-                onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
+              onClick={() => setActive(nav.title)}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
