@@ -1,6 +1,6 @@
 /* ---- particles.js config ---- */
 
-const particlesJS=("particles-js", {
+const particlesJS = ("particles-js", {
     particles: {
         number: {
             value: 140,
@@ -181,3 +181,4 @@ if (allElements.length > 0) {
     });
 }
 // module.exports = particlesJS;
+export default particlesJS;

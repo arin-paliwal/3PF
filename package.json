@@ -22,7 +22,8 @@
     "react-tilt": "^0.1.4",
     "react-tsparticles": "^2.9.3",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.150.1"
+    "three": "^0.150.1",
+    "tsparticles": "^2.9.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

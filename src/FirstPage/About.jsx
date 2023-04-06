@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import Particles from "react-tsparticles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { StarsCanvas } from "../components/canvas";
 import { Stars } from "@react-three/drei";
+import particlesConfig from "./particles.json";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -35,6 +37,17 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+    const [particlesConfigState, setParticlesConfigState] = useState({});
+
+  useEffect(() => {
+    const loadParticlesConfig = async () => {
+      const response = await fetch(particlesConfig);
+      const json = await response.json();
+      setParticlesConfigState(json);
+    };
+    loadParticlesConfig();
+  }, []);
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
