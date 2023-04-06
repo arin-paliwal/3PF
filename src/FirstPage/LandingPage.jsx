@@ -1,10 +1,6 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import  About  from "./About";
 import Particles from "react-tsparticles";
 import Navbar from "./Navbar";
-import { StarsCanvas } from "../components";
-import  particlesJS  from "./particlesConfig";
-import particlesConfig from "./particles.json";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 
