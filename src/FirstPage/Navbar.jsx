@@ -41,8 +41,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className={`text-[18px] top-[150px] text-secondary ${styles.heroSubText}`}>
-            Hi, My name is Arin Paliwal
+          <p
+            className={`text-[18px] top-[150px] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]`}
+          >
+            Hi there,<br></br>
+            Welcome to my Portfolio
           </p>
           {/* <img src={fplogo} alt="logo" className="w-20 h-20 object-contain" /> */}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
