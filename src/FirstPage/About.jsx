@@ -16,11 +16,11 @@ import githubgif from "./Icons/github.gif";
 import fplogo from "./fplogo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { github } from "./github-2.gif";
-import github from "./Icons/github.json";
-import LinkedIn from "./Icons/linkedin.json";
-import Twitter from "./Icons/twittter.gif";
-import Instagram from "./Icons/instagram.gif";
-import Facebook from './Icons/fb.gif'
+import Github from "./Icons/github.png";
+import LinkedIn from "./Icons/linkedin.png";
+import Twitter from "./Icons/twitter.png";
+import Instagram from "./Icons/instagram.png";
+import Facebook from './Icons/facebook.png'
 const animations = [
   {
     animationData: animation1,
@@ -76,20 +76,7 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
-  const animations = [
-    {
-      animationData: github,
-    },
-    {
-      animationData: LinkedIn,
-    },
-    {
-      animationData: Twitter,
-    },
-    {
-      animationData: Instagram,
-    },
-  ];
+
   
   const options = {
     loop: true,
@@ -157,7 +144,11 @@ const About = () => {
         >
           I'm Arin Paliwal
           <br />
-          <div className={`${styles.heroSubText} mt-[-9px]`}>I'm into</div>
+          <div
+            className={`text-secondary font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]} mt-[-40px]`}
+          >
+            I'm into
+          </div>
         </p>
         <h2
           className={
@@ -166,47 +157,45 @@ const About = () => {
         >
           {text}
         </h2>
+        <br></br>
+        {/* <h3 className={` text-center ${styles.heroSubText}`}>Connect With Me </h3> */}
       </motion.div>
-      <div className="mt-10 flex justify-center items-center w-[400px]">
+      <br></br>
+      <div className="mt-10 flex justify-center gap-6 items-center w-[400px]">
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="h-full">
-            {/* <Lottie animationData={github} /> */}
-            <img src={github} alt="twitter"></img>
-          </div>
+          <img src={Github} alt="Github"></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="object-contain h-full">
-            <Lottie animationData={Linke} />
-          </div>
+          <img src={Facebook} alt="Facebook"></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Instagram} alt="twitter"></img>
+          <img src={Twitter} alt="Twitter"></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Twitter} alt="twitter"></img>
+          <img src={LinkedIn} alt="LinkedIn"></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Facebook} alt="twitter"></img>
+          <img src={Instagram} alt="Instagram"></img>
         </a>
       </div>
     </div>
