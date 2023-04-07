@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 import './button.css'
 import Contact from '../components/Contact'
+import { Link } from "react-router-dom";
 
 
 const Introduction = () => {
@@ -135,8 +136,10 @@ const Introduction = () => {
           <About />
           <div className="flex justify-center">
             <button class="btn-43">
-              <span class="old">About Me !</span>
-              <span class="new">Know More</span>
+              <Link to="/about">
+                <span class="old">About Me !</span>
+                <span class="new">Know More</span>
+              </Link>
             </button>
           </div>
           <Contact />
