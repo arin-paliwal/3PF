@@ -50,10 +50,10 @@ const Hero = () => {
             Hi, I'm <span className="text-[#da5923]">Arin Paliwal</span>
             <br />
           </h1>
-          <div className="text-[20px] text-secondary">I'm working on :</div>
-          <p className={`${styles.heroSubText}mt-2 text-white-100`}>
+          {/* <div className="text-[20px] text-secondary">I'm working on :</div> */}
+          {/* <p className={`${styles.heroSubText}mt-2 text-white-100`}>
             <span>{text}</span>
-          </p>
+          </p> */}
         </div>
       </div>
       <ComputersCanvas />
