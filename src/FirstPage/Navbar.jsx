@@ -3,12 +3,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "./constants/index.js";
 import titlelogo from '../../titlelogo.png'
-import { logo, menu, close } from "../assets";
-import fplogo from "../FirstPage/fplogo.svg";
-import SectionWrapper from "./SectionWrapper";
 const Navbar = () => {
   const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -49,27 +45,10 @@ const Navbar = () => {
             Hi there,<br></br>
             Welcome to my Portfolio
           </p>
-          {/* <img src={fplogo} alt="logo" className="w-20 h-20 object-contain" /> */}
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {/* <p className="text-white text-[29px] font-bold cursor-pointer gap-15 flex">
-            Welcome to my Portfolio &nbsp;
-          </p> */}
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((nav) => (
-            <li
-              Link
-              to={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              }
-              hover:text-white
-              font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
+        <ul className="list-none hidden sm:flex flex-row gap-10 text-secondary">
+          <li>About</li>
+          <li>Contact</li>
         </ul>
       </div>
     </nav>
