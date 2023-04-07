@@ -1,13 +1,104 @@
 import React, { useEffect, useState } from "react";
+import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import Lottie from "lottie-react";
+import Particles from "react-tsparticles";
+import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import animation1 from "./Icons/github.json";
+import animation2 from "./Icons/instagram.json";
+import animation3 from "./Icons/linkedin.json";
+import animation4 from "./Icons/twitter.json";
+import githubgif from "./Icons/github.gif";
+
+import fplogo from "./fplogo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { github } from "./github-2.gif";
 import github from "./Icons/github.json";
 import LinkedIn from "./Icons/linkedin.json";
-import Twitter from "./Icons/twitter.json";
-import Instagram from "./Icons/instagram.json";
+import Twitter from "./Icons/twittter.gif";
+import Instagram from "./Icons/instagram.gif";
+import Facebook from './Icons/fb.gif'
+const animations = [
+  {
+    animationData: animation1,
+    link: "https://example.com/1",
+  },
+  {
+    animationData: animation2,
+    link: "https://example.com/2",
+  },
+  {
+    animationData: animation3,
+    link: "https://example.com/3",
+  },
+  {
+    animationData: animation4,
+    link: "https://example.com/4",
+  },
+];
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+import AnimatedLinks from "./Links";
+import { git } from "../assets";
+import { Link } from "react-router-dom";
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index)}
+        className="w-full p-[1px] rounded=[20px]"
+      >
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        >
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
+        </div>
+      </motion.div>
+      {/* {title} */}
+    </Tilt>
+  );
+};
+
 const About = () => {
+  const animations = [
+    {
+      animationData: github,
+    },
+    {
+      animationData: LinkedIn,
+    },
+    {
+      animationData: Twitter,
+    },
+    {
+      animationData: Instagram,
+    },
+  ];
+  
+  const options = {
+    loop: true,
+    autoplay: true,
+    // animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid meet",
+    },
+  };
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -56,6 +147,9 @@ const About = () => {
       <br></br>
       <motion.div variants={textVariant()} className="relative w-full">
         <br />
+        {/* <p className={`${styles.heroSubText} top-[150px]`}>
+          My name is Arin Paliwal */}
+        {/* </p> */}
         <p
           className={
             " text-white lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[40px] lg:leading-[98px] mt-2 text-center mb-2"
@@ -80,7 +174,8 @@ const About = () => {
           rel="noopener noreferrer"
         >
           <div className="h-full">
-            <Lottie animationData={Twitter} />
+            {/* <Lottie animationData={github} /> */}
+            <img src={github} alt="twitter"></img>
           </div>
         </a>
         <a
@@ -89,7 +184,7 @@ const About = () => {
           rel="noopener noreferrer"
         >
           <div className="object-contain h-full">
-            <Lottie animationData={LinkedIn} />
+            <Lottie animationData={Linke} />
           </div>
         </a>
         <a
@@ -97,14 +192,21 @@ const About = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Lottie animationData={github} />
+          <img src={Instagram} alt="twitter"></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Lottie animationData={Instagram} />
+          <img src={Twitter} alt="twitter"></img>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourname"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Facebook} alt="twitter"></img>
         </a>
       </div>
     </div>
