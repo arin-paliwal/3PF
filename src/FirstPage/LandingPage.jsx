@@ -134,7 +134,7 @@ const Introduction = () => {
         <div className="bg-cover bg-no-repeat bg-center">
           <Navbar />
           <About />
-          <div className="flex justify-center xs:mt-10 lg-mt-0">
+          <div className="flex justify-center xs:mt-10 lg:mt-0">
             <button class="btn-43">
               <Link to="/about">
                 <span class="old">About Me !</span>
