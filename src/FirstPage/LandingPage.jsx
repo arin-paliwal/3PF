@@ -3,20 +3,12 @@ import Particles from "react-tsparticles";
 import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
+import './button.css'
+import Contact from '../components/Contact'
 
 
 const Introduction = () => {
   const [particlesConfigState, setParticlesConfigState] = useState({});
-
-  // load particles config from JSON file on component mount
-  // useEffect(() => {
-  //   const loadParticlesConfig = async () => {
-  //     const response = await fetch(particlesConfig);
-  //     const json = await response.json();
-  //     setParticlesConfigState(json);
-  //   };
-  //   loadParticlesConfig();
-  // }, []);
   const init=useCallback(async(engine)=>{
     await loadFull(engine)
   })
@@ -141,6 +133,13 @@ const Introduction = () => {
         <div className="bg-cover bg-no-repeat bg-center">
           <Navbar />
           <About />
+          <div className="flex justify-center">
+            <button class="btn-43">
+              <span class="old">About Me !</span>
+              <span class="new">Know More</span>
+            </button>
+          </div>
+          <Contact />
         </div>
       </div>
     </div>
