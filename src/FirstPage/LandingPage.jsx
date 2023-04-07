@@ -142,7 +142,7 @@ const Introduction = () => {
               </Link>
             </button>
           </div>
-          <Contact />
+          {/* <Contact /> */}
         </div>
       </div>
     </div>
