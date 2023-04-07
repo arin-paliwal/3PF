@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "./constants/index.js";
+import titlelogo from '../../titlelogo.png'
 import { logo, menu, close } from "../assets";
 import fplogo from "../FirstPage/fplogo.svg";
 import SectionWrapper from "./SectionWrapper";
@@ -41,8 +42,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
+          <img src={titlelogo} className="h-20"></img>
           <p
-            className={`text-[18px] top-[150px] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]`}
+            className={` ${styles.heroSubText}text-[18px] top-[150px] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] text-secondary`}
           >
             Hi there,<br></br>
             Welcome to my Portfolio

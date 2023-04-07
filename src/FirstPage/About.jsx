@@ -7,6 +7,11 @@ import Particles from "react-tsparticles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import animation1 from "./Icons/github.json";
+import animation2 from "./Icons/instagram.json";
+import animation3 from "./Icons/linkedin.json";
+import animation4 from "./Icons/twitter.json";
+
 import fplogo from "./fplogo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { github } from "./github-2.gif";
@@ -14,6 +19,32 @@ import github from "./Icons/github.json";
 import LinkedIn from "./Icons/linkedin.json";
 import Twitter from "./Icons/twitter.json";
 import Instagram from "./Icons/instagram.json";
+const animations = [
+  {
+    animationData: animation1,
+    link: "https://example.com/1",
+  },
+  {
+    animationData: animation2,
+    link: "https://example.com/2",
+  },
+  {
+    animationData: animation3,
+    link: "https://example.com/3",
+  },
+  {
+    animationData: animation4,
+    link: "https://example.com/4",
+  },
+];
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+import AnimatedLinks from "./Links";
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -41,6 +72,29 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+  const animations = [
+    {
+      animationData: github,
+    },
+    {
+      animationData: LinkedIn,
+    },
+    {
+      animationData: Twitter,
+    },
+    {
+      animationData: Instagram,
+    },
+  ];
+  
+  const options = {
+    loop: true,
+    autoplay: true,
+    // animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid meet",
+    },
+  };
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -86,55 +140,62 @@ const About = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-full">
+      <br></br>
       <motion.div variants={textVariant()} className="relative w-full">
         <br />
         {/* <p className={`${styles.heroSubText} top-[150px]`}>
           My name is Arin Paliwal */}
         {/* </p> */}
-        <p className={` ${styles.heroSubText} text-secondary text-center`}>
-          I'm into
+        <p
+          className={
+            " text-white lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[40px] lg:leading-[98px] mt-2 text-center mb-2"
+          }
+        >
+          I'm Arin Paliwal
+          <br />
+          <div className={`${styles.heroSubText} mt-[-9px]`}>I'm into</div>
         </p>
         <h2
-          className={" lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[40px] lg:leading-[98px] mt-2 text-secondary text-center h-[50px]"}
+          className={
+            " lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[40px] lg:leading-[98px] mt-2 text-secondary text-center h-[50px]"
+          }
         >
           {text}
         </h2>
       </motion.div>
-      <div className="mt-10 justify-center items-center">
-        <p className="text-lg font-bold text-center">Arin Paliwal</p>
-        <img src={fplogo} alt="Profile" className="w-32 h-32 rounded-full" />
-        <div className="ml-4 flex flex-col justify-center items-start">
-          <div className="flex mt-2 h-10 w-40 object-contain">
-            <a
-              href="https://www.linkedin.com/in/yourname"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Lottie animationData={github} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourname"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Lottie animationData={LinkedIn} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourname"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Lottie animationData={Twitter} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourname"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Lottie animationData={Instagram} />
-            </a>
+      <div className="mt-10 flex justify-center items-center w-[400px]">
+        <a
+          href="https://www.linkedin.com/in/yourname"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="h-full">
+            <Lottie animationData={Twitter} />
           </div>
-        </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourname"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="object-contain h-full">
+            <Lottie animationData={LinkedIn} />
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourname"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Lottie animationData={github} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourname"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Lottie animationData={Instagram} />
+        </a>
       </div>
     </div>
   );
