@@ -132,70 +132,78 @@ const About = () => {
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <br></br>
-      <motion.div variants={textVariant()} className="relative w-full">
+      <motion.div
+        className="relative w-full max-w-screen-lg mx-auto px-4"
+        variants={textVariant()}
+      >
         <br />
-        {/* <p className={`${styles.heroSubText} top-[150px]`}>
-          My name is Arin Paliwal */}
-        {/* </p> */}
-        <p
-          className={
-            " text-white lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[40px] lg:leading-[98px] mt-2 text-center mb-2"
-          }
-        >
+        <p className="text-white mt-10 text-2xl lg:text-5xl text-center mb-4">
           I'm Arin Paliwal
-          <br />
-          <div
-            className={`text-secondary font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]} mt-[-40px]`}
-          >
-            I'm into
-          </div>
         </p>
-        <h2
-          className={
-            " lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[40px] lg:leading-[98px] mt-2 text-secondary text-center h-[50px]"
-          }
-        >
+        <div className="text-secondary font-medium text-lg lg:text-2xl text-center mb-8">
+          I'm into
+        </div>
+        <h2 className="text-secondary text-3xl sm:text-4xl lg:text-5xl text-center mb-8 h-[40px]  ">
           {text}
-        </h2>
-        <br></br>
-        {/* <h3 className={` text-center ${styles.heroSubText}`}>Connect With Me </h3> */}
+        </h2> 
+        {/* <h3 className={`text-center ${styles.heroSubText}`}>Connect With Me</h3> */}
       </motion.div>
       <br></br>
-      <div className="mt-10 flex justify-center gap-6 items-center w-[400px]">
+      <div className="mt-10 flex justify-center gap-6 items-center">
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Github} alt="Github"></img>
+          <img
+            src={Github}
+            alt="Github"
+            className="w-8 h-8 sm:w-10 sm:h-10"
+          ></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Facebook} alt="Facebook"></img>
+          <img
+            src={Facebook}
+            alt="Facebook"
+            className="w-8 h-8 sm:w-10 sm:h-10"
+          ></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Twitter} alt="Twitter"></img>
+          <img
+            src={Twitter}
+            alt="Twitter"
+            className="w-8 h-8 sm:w-10 sm:h-10"
+          ></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={LinkedIn} alt="LinkedIn"></img>
+          <img
+            src={LinkedIn}
+            alt="LinkedIn"
+            className="w-8 h-8 sm:w-10 sm:h-10"
+          ></img>
         </a>
         <a
           href="https://www.linkedin.com/in/yourname"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Instagram} alt="Instagram"></img>
+          <img
+            src={Instagram}
+            alt="Instagram"
+            className="w-8 h-8 sm:w-10 sm:h-10"
+          ></img>
         </a>
       </div>
     </div>

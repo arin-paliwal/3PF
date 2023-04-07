@@ -128,13 +128,13 @@ const Introduction = () => {
           retina_detect: true,
         }}
         init={init}
-      />
+      ></Particles>
       {/* <StarsCanvas /> */}
       <div className="relative z-0">
         <div className="bg-cover bg-no-repeat bg-center">
           <Navbar />
           <About />
-          <div className="flex justify-center">
+          <div className="flex justify-center xs:mt-10 lg-mt-0">
             <button class="btn-43">
               <Link to="/about">
                 <span class="old">About Me !</span>
