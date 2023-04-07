@@ -69,15 +69,11 @@ const About = () => {
         </div>
         <h2 className="text-secondary text-3xl sm:text-4xl lg:text-5xl text-center mb-8 h-[40px]  ">
           {text}
-        </h2> 
+        </h2>
       </motion.div>
       <br></br>
       <div className="mt-10 flex justify-center gap-6 items-center">
-        <a
-          href="https://www.linkedin.com/in/yourname"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/arin-paliwal">
           <img
             src={Github}
             alt="Github"
@@ -85,7 +81,7 @@ const About = () => {
           ></img>
         </a>
         <a
-          href="https://www.linkedin.com/in/yourname"
+          href="https://www.facebook.com/paliwal.arin"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -96,7 +92,7 @@ const About = () => {
           ></img>
         </a>
         <a
-          href="https://www.linkedin.com/in/yourname"
+          href="https://twitter.com/arin_paliwal"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -107,7 +103,7 @@ const About = () => {
           ></img>
         </a>
         <a
-          href="https://www.linkedin.com/in/yourname"
+          href="https://www.linkedin.com/in/arinpaliwal/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -118,7 +114,7 @@ const About = () => {
           ></img>
         </a>
         <a
-          href="https://www.linkedin.com/in/yourname"
+          href="https://www.instagram.com/arin.paliwal/"
           target="_blank"
           rel="noopener noreferrer"
         >
