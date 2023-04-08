@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 desktop_pc
-planet
 assets
 # Editor directories and files
 .vscode/*
