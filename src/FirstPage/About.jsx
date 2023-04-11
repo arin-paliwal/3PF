@@ -48,7 +48,7 @@ const About = () => {
   const toRotate = [
     "Web Development",
     "Data Structures & Algorithms",
-    "Figma",
+    "Graphics Designing",
     "3D Models",
     "Machine Learning",
   ];
@@ -72,7 +72,7 @@ const About = () => {
         </h2>
       </motion.div>
       <br></br>
-      <div className="mt-10 flex justify-center gap-6 items-center">
+      {/* <div className="mt-10 flex justify-center gap-6 items-center">
         <a href="https://github.com/arin-paliwal">
           <img
             src={Github}
@@ -124,7 +124,7 @@ const About = () => {
             className="w-8 h-8 sm:w-10 sm:h-10"
           ></img>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

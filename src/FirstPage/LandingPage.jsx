@@ -1,13 +1,14 @@
-import  About  from "./About";
+import About from "./About";
 import Particles from "react-tsparticles";
 import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
-import './button.css'
+import "./button.css";
 // import "tsparticles/dist/tsparticles.css";
-import Contact from '../components/Contact'
+import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
-
+import './socialButton.css'
+// import Button from '@mui/material/Button'
 
 const Introduction = () => {
   useEffect(() => {
@@ -123,28 +124,53 @@ const Introduction = () => {
     });
   }, []);
   const [particlesConfigState, setParticlesConfigState] = useState({});
-  const init=useCallback(async(engine)=>{
-    await loadFull(engine)
-  })
+  const init = useCallback(async (engine) => {
+    await loadFull(engine);
+  });
 
   return (
     <div>
       <Particles options={particlesConfigState} init={init} />
-      {/* <StarsCanvas /> */}
-      <div className="relative z-0">
-        <div className="bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <About />
-          <div className="flex justify-center xs:mt-10 md:mt-0">
-            <button className="btn-43">
-              <Link to="/about">
-                <span className="old">About Me !</span>
-                <span className="new">Know More</span>
-              </Link>
-            </button>
+      <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
+        <Navbar />
+        <About />
+      </div>
+      <div className="center">
+        <div class="wrapper">
+          <div class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span>
+              <i class="fab fa-facebook-f"></i>
+            </span>
           </div>
-          {/* <Contact /> */}
+
+          <div class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span>
+              <i class="fab fa-twitter"></i>
+            </span>
+          </div>
+          <div class="icon github">
+            <div class="tooltip">github</div>
+            <span>
+              <i class="fab fa-github"></i>
+            </span>
+          </div>
+          <div class="icon youtube">
+            <div class="tooltip">YouTube</div>
+            <span>
+              <i class="fab fa-youtube"></i>
+            </span>
+          </div>
         </div>
+      </div>
+      <div className="flex justify-center xs:mt-10 md:mt-0">
+        <button className="btn-43">
+          <Link to="/about">
+            <span className="old">Know More</span>
+            <span className="new">About Me!</span>
+          </Link>
+        </button>
       </div>
     </div>
   );
