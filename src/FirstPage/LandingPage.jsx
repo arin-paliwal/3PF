@@ -4,10 +4,16 @@ import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 import "./button.css";
+import Github from "./Icons/github.png";
+import LinkedIn from "./Icons/linkedin.png";
+import Twitter from "./Icons/twitter.png";
+import Instagram from "./Icons/instagram.png";
+import Facebook from "./Icons/facebook.png";
 // import "tsparticles/dist/tsparticles.css";
 import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
-import './socialButton.css'
+// import './socialButton.css'
+import './btn.scss'
 // import Button from '@mui/material/Button'
 
 const Introduction = () => {
@@ -133,15 +139,7 @@ const Introduction = () => {
       <Particles options={particlesConfigState} init={init} />
       <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
         <Navbar />
-        {/* <About /> */}
-      </div>
-      <div className="flex justify-center xs:mt-10 md:mt-0">
-        <button className="btn-43">
-          <Link to="/about">
-            <span className="old">Know More</span>
-            <span className="new">About Me!</span>
-          </Link>
-        </button>
+        <About />
       </div>
     </div>
   );
