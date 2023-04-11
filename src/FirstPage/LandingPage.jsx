@@ -133,36 +133,7 @@ const Introduction = () => {
       <Particles options={particlesConfigState} init={init} />
       <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
         <Navbar />
-        <About />
-      </div>
-      <div className="center">
-        <div class="wrapper">
-          <div class="icon facebook">
-            <div class="tooltip">Facebook</div>
-            <span>
-              <i class="fab fa-facebook-f"></i>
-            </span>
-          </div>
-
-          <div class="icon twitter">
-            <div class="tooltip">Twitter</div>
-            <span>
-              <i class="fab fa-twitter"></i>
-            </span>
-          </div>
-          <div class="icon github">
-            <div class="tooltip">github</div>
-            <span>
-              <i class="fab fa-github"></i>
-            </span>
-          </div>
-          <div class="icon youtube">
-            <div class="tooltip">YouTube</div>
-            <span>
-              <i class="fab fa-youtube"></i>
-            </span>
-          </div>
-        </div>
+        {/* <About /> */}
       </div>
       <div className="flex justify-center xs:mt-10 md:mt-0">
         <button className="btn-43">
