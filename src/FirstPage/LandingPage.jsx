@@ -14,6 +14,7 @@ import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
 // import './socialButton.css'
 import './btn.scss'
+import Preloader from "./Preloader";
 // import Button from '@mui/material/Button'
 
 const Introduction = () => {
@@ -138,11 +139,10 @@ const Introduction = () => {
     <div>
       <Particles options={particlesConfigState} init={init} />
       <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
-        {/* <Navbar /> */}
-        {/* <About /> */}
+        <Navbar />
+        <About />
       </div>
       <div>
-        <button>Arin</button>
       </div>
       <div className="flex justify-center xs:mt-10 md:mt-0">
         <button className="btn-43 mt-10">
