@@ -2,6 +2,7 @@ import About from "./About";
 import Particles from "react-tsparticles";
 import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { loadFull } from "tsparticles";
 import "./button.css";
 import Github from "./Icons/github.png";
@@ -139,7 +140,14 @@ const Introduction = () => {
           <Navbar />
           <About />
         </div>
-        <div></div>
+        <div>
+          <div className="button">
+            <div className="icon">
+              <i className="fab fa-facebook-f"/>
+            </div>
+            <span>Facebook</span>
+          </div>
+        </div>
         <div className="flex justify-center xs:mt-10 md:mt-0">
           <button className="btn-43 mt-10">
             <Link to="/about">
