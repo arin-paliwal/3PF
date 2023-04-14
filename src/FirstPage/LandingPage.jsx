@@ -10,7 +10,6 @@ import LinkedIn from "./Icons/linkedin.png";
 import Twitter from "./Icons/twitter.png";
 import Instagram from "./Icons/instagram.png";
 import Facebook from "./Icons/facebook.png";
-// import "tsparticles/dist/tsparticles.css";
 import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
 
@@ -139,14 +138,6 @@ const Introduction = () => {
         <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
           <Navbar />
           <About />
-        </div>
-        <div>
-          <div className="button">
-            <div className="icon">
-              <i className="fab fa-facebook-f"/>
-            </div>
-            <span>Facebook</span>
-          </div>
         </div>
         <div className="flex justify-center xs:mt-10 md:mt-0">
           <button className="btn-43 mt-10">
