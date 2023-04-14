@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import LandingPage from './FirstPage/LandingPage'
 import './index.css'
-import main from './FirstPage/main'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>

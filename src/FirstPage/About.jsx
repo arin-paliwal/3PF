@@ -68,7 +68,7 @@ const About = () => {
           I'm into
         </div>
         <h2 className="text-secondary text-3xl sm:text-4xl lg:text-5xl text-center mb-8 h-[40px]  ">
-          {text}
+          {/* {text} */}
         </h2>
       </motion.div>
       <br></br>
