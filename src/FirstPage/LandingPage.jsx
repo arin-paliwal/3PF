@@ -136,7 +136,7 @@ const Introduction = () => {
           <button className="btn-43 mt-10">
             <Link to="/about">
               <span className="old">Know More</span>
-              <span className="new">About Me</span>
+              <span className="new">About Me !</span>
             </Link>
           </button>
         </div>
