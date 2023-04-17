@@ -3,7 +3,7 @@ import './preloader.css';
 
 function Preloader() {
     return (
-      <div className="preloader">
+      <div className="preloader sm:items-center">
         <div className="loader">
           <svg
             role="img"
