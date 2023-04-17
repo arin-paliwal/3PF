@@ -10,8 +10,8 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={fadeIn("left", "spring")}>
-        <p className={styles.sectionSubText}>Currently</p>
-        <h2 className={styles.heroHeadText}>Technologies I'm working on.</h2>
+        <p className={styles.sectionSubText}>Technologies</p>
+        <h2 className={styles.heroHeadText}>Skills.</h2>
       </motion.div>
       <div className="flex flex-row flex-wrap justify-center mt-20 gap-10">
         {technologies.map((technology) => (
