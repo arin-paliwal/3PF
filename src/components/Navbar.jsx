@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to="/"
+          to="/about"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -51,10 +51,10 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-[#e37926]" : "text-secondary"
               }
               hover:text-white text-[18px]
-              font-medium cursor-pointer`}
+              font-medium text-red cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>

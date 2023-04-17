@@ -137,7 +137,6 @@ function AppContainer() {
       setShowRoutePreloader(false);
     }, 3500);
   }, []);
-
   return (
     <div>
       {showRoutePreloader ? <Preloader /> : null}
