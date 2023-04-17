@@ -36,7 +36,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
         Welcome to my portfolio! My name is Arin Paliwal, and I am a passionate
         web developer, UI/UX developer, coder, and data structures and

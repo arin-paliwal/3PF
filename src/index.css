@@ -214,10 +214,20 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e37926;
+  background: #e37746;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #e37926;
+}
+/* fallback style for non-supporting browsers */
+::-moz-selection {
+  background-color: #e37926;
+  color: #000;
+}
+
+::selection {
+  background-color: #e37926;
+  color: #000;
 }
