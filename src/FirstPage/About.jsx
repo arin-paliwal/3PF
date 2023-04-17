@@ -6,10 +6,8 @@ import Github from "./Icons/github.png";
 import LinkedIn from "./Icons/linkedin.png";
 import Twitter from "./Icons/twitter.png";
 import Instagram from "./Icons/instagram.png";
-import Facebook from './Icons/facebook.png'
+import Facebook from "./Icons/facebook.png";
 const About = () => {
-
-  
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");

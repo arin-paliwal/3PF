@@ -51,12 +51,12 @@ function Preloader() {
             >
               <g>
                 <rect
-                  fill="hsl(193,90%,50%)"
+                  fill="hsl(26, 77%, 52%)" // 	hsl(26, 77%, 52%)
                   width="128"
                   height="64"
                   clip-path="url(#smiley-eyes)"
                 />
-                <g fill="none" stroke="hsl(193,90%,50%)">
+                <g fill="none" stroke="hsl(26, 77%, 52%)">
                   <circle
                     class="smiley__mouth1"
                     cx="64"
@@ -75,12 +75,12 @@ function Preloader() {
               </g>
               <g mask="url(#smiley-mask)">
                 <rect
-                  fill="hsl(223,90%,50%)"
+                  fill="hsl(56, 77%, 52%)"
                   width="128"
                   height="64"
                   clip-path="url(#smiley-eyes)"
                 />
-                <g fill="none" stroke="hsl(223,90%,50%)">
+                <g fill="none" stroke="hsl(26, 77%, 52%)">
                   <circle
                     class="smiley__mouth1"
                     cx="64"
