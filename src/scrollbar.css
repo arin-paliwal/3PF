@@ -1,0 +1,28 @@
+  .scrollbar_custom{
+    overflow-y: scroll;
+  }
+.scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
