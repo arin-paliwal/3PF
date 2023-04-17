@@ -63,7 +63,7 @@ function AppContainer() {
     // Simulate threejs model loading
     setTimeout(() => {
       setShowModelPreloader(false);
-    }, 8000);
+    }, 5000);
   }, []);
 
   useEffect(() => {
