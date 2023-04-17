@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 import "./button.css";
+import lightTheme from "../Theme/lightTheme";
+import darkTheme from "../Theme/darkTheme";
 import { Link } from "react-router-dom";
 const Introduction = () => {
   useEffect(() => {
@@ -122,25 +124,23 @@ const Introduction = () => {
   const init = useCallback(async (engine) => {
     await loadFull(engine);
   });
-    
   return (
-    
-      <div>
-        <Particles options={particlesConfigState} init={init} />
-        <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <About />
-        </div>
-        {/* <AnimatedButtons/> */}
-        <div className="flex justify-center xs:mt-10 md:mt-0">
-          <button className="btn-43 mt-10">
-            <Link to="/about">
-              <span className="old">Know More</span>
-              <span className="new">About Me !</span>
-            </Link>
-          </button>
-        </div>
+    <div>
+      <Particles options={particlesConfigState} init={init} />
+      <div className="relative z-[-1] bg-cover bg-no-repeat bg-center bg-primary">
+        <Navbar />
+        <About />
       </div>
+      {/* <AnimatedButtons/> */}
+      <div className="flex justify-center xs:mt-10 md:mt-0">
+        <button className="btn-43 mt-10">
+          <Link to="/about">
+            <span className="old">Know More</span>
+            <span className="new">About Me !</span>
+          </Link>
+        </button>
+      </div>
+    </div>
   );
 };
 

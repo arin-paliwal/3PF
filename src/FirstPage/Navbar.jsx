@@ -46,8 +46,8 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10 text-secondary">
-          <li>About</li>
-          <li>Contact</li>
+          {/* <li>About</li>
+          <li>Contact</li> */}
         </ul>
       </div>
     </nav>

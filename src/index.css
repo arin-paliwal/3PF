@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +27,7 @@
   background: -webkit-linear-gradient(
     to right,
     #434343,
-    #000000
+    #000000 
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
