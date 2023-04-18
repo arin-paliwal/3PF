@@ -138,20 +138,19 @@ const Introduction = () => {
 
       <div className="flex items-center justify-center mt-10 gap-10">
         <div className=" flex Icons gap-7">
-          <a href="https://www.facebook.com/paliwal.arin">
+          <a href="https://www.facebook.com/paliwal.arin" target="_blank">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="https://twitter.com/arin_paliwal">
+          <a href="https://twitter.com/arin_paliwal" target="_blank">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/arin.paliwal/">
+          <a href="https://www.instagram.com/arin.paliwal/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="https://www.linkedin.com/in/arinpaliwal/">
+          <a href="https://www.linkedin.com/in/arinpaliwal/" target="_blank">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a
-            href="https://github.com/arin-paliwal">
+          <a href="https://github.com/arin-paliwal" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>
         </div>

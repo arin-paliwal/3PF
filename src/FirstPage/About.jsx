@@ -79,12 +79,12 @@ const [isDeleting, setIsDeleting] = useState(false);
 const words = [
   "Web Development",
   "Data Structures & Algorithms",
-  "Graphics Designing",
+  "UI/UX Designing",
   "3D Models",
   "Machine Learning",
 ];
 const typingSpeed = 100;
-const deletingSpeed = 50;
+const deletingSpeed = 70 ;
 const pauseTime = 1000;
 
 useEffect(() => {
@@ -133,8 +133,8 @@ const displayText = currentWord.substring(0, letterIndex);
         variants={textVariant()}
       >
         <br />
-        <p className="text-white mt-10 text-2xl lg:text-5xl text-center mb-4">
-          I'm Arin Paliwal
+        <p className="font-bold text-[white] mt-10 text-2xl lg:text-5xl text-center mb-4">
+          I'm <span className="text-[#e37926]">Arin Paliwal</span>
         </p>
         <div className="text-[#807d90] font-medium text-lg lg:text-2xl text-center mb-8 mt-[-20px]">
           I'm into
