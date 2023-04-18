@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 // import Typewriter from 'typewriter-effect/dist/core';
 import { textVariant } from "../utils/motion";
 import Github from "./Icons/github.png";
@@ -126,7 +127,7 @@ const displayText = currentWord.substring(0, letterIndex);
         variants={textVariant()}
       >
         <br />
-        <p className="font-bold text-[white] mt-10 text-2xl lg:text-5xl text-center mb-4">
+        <p className={`font-bold text-[white] mt-10 text-2xl lg:text-5xl text-center mb-4 ${styles.sectionHeadText}.`}>
           I'm <span className="text-[#e37926]">Arin Paliwal</span>
         </p>
         <div className="text-[#807d90] font-medium text-lg lg:text-2xl text-center mb-8 mt-[-20px]">

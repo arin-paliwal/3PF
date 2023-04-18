@@ -4,11 +4,9 @@ import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 import "./button.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './Icons.css'
 import { Link } from "react-router-dom";
-import Icons from "./Icons";
 import '../index.css'
-import { styles } from "../styles";
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
@@ -134,36 +132,9 @@ const Introduction = () => {
         <Navbar />
         <About />
       </div>
-      {/* <AnimatedButtons/> */}
-
-      {/* <div className=" flex items-center justify-center gap-10">
-        <div className=" flex Icons gap-7 mb-">
-          <a href="https://www.facebook.com/paliwal.arin" target="_blank">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com/arin_paliwal" target="_blank">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/arin.paliwal/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/arinpaliwal/" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/arin-paliwal" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-        <button className="btn-43 mt-">
-          <Link to="/about">
-            <span className="old">Know More</span>
-            <span className="new">About Me !</span>
-          </Link>
-        </button>
-      </div> */}
-      <div class="flex flex-col items-center justify-center h-[240px]">
-        <div class="flex items-center justify-center gap-10">
-          <div class="flex Icons gap-7 mb-">
+      <div className="flex justify-center ">
+        <div class="items-center justify-center gap-10">
+          <div class="flex Icons gap-7 mb-2">
             <a href="https://www.facebook.com/paliwal.arin" target="_blank">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
@@ -180,7 +151,7 @@ const Introduction = () => {
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
-          <button class="btn-43 mt-">
+          <button class="btn-43 mt-[100px] ">
             <Link to="/about">
               <span class="old">Know More</span>
               <span class="new">About Me !</span>
