@@ -133,28 +133,28 @@ const Introduction = () => {
         <About />
       </div>
       <div className="flex justify-center ">
-        <div class="items-center justify-center gap-10">
-          <div class="flex Icons gap-7 mb-2">
+        <div className="items-center justify-center gap-10">
+          <div className="flex Icons gap-7 mb-2">
             <a href="https://www.facebook.com/paliwal.arin" target="_blank">
-              <i class="fa-brands fa-facebook-f"></i>
+              <i className="fa-brands fa-facebook-f"></i>
             </a>
             <a href="https://twitter.com/arin_paliwal" target="_blank">
-              <i class="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-twitter"></i>
             </a>
             <a href="https://www.instagram.com/arin.paliwal/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
             <a href="https://www.linkedin.com/in/arinpaliwal/" target="_blank">
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/arin-paliwal" target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </div>
-          <button class="btn-43 mt-[100px] ">
+          <button className="btn-43 mt-[100px] ">
             <Link to="/about">
-              <span class="old">Know More</span>
-              <span class="new">About Me !</span>
+              <span className="old">Know More</span>
+              <span className="new">About Me !</span>
             </Link>
           </button>
         </div>

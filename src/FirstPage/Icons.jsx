@@ -3,39 +3,39 @@ import "./Icons.css";
 const Icons = () => {
   return (
     <div>
-      <section class="trial-block shadow3" id="ContactUs">
-        <div class="height450">
-          <div class="section-title text-center">
-            <span class="section-title-line section-title-line"></span>
+      <section className="trial-block shadow3" id="ContactUs">
+        <div className="height450">
+          <div className="section-title text-center">
+            <span className="section-title-line section-title-line"></span>
           </div>
-          <div class="social-overlap process-scetion mt100">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-md-10">
-                  <div class="social-bar">
-                    <div class="social-icons mb-3 iconpad text-center">
-                      <a class="slider-nav-item">
-                        <i class="fab fa-facebook"></i>
+          <div className="social-overlap process-scetion mt100">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-10">
+                  <div className="social-bar">
+                    <div className="social-icons mb-3 iconpad text-center">
+                      <a className="slider-nav-item">
+                        <i className="fab fa-facebook"></i>
                       </a>
-                      <a class="slider-nav-item">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
-                        target="_blank"
-                        class="slider-nav-item"
-                      >
-                        <i class="fab fa-instagram"></i>
+                      <a className="slider-nav-item">
+                        <i className="fab fa-twitter"></i>
                       </a>
                       <a
                         href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
                         target="_blank"
-                        class="slider-nav-item"
+                        className="slider-nav-item"
                       >
-                        <i class="fab fa-linkedin"></i>
+                        <i className="fab fa-instagram"></i>
                       </a>
-                      <a href="#" class="slider-nav-item">
-                        <i class="fab fa-youtube"></i>
+                      <a
+                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
+                        target="_blank"
+                        className="slider-nav-item"
+                      >
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                      <a href="#" className="slider-nav-item">
+                        <i className="fab fa-youtube"></i>
                       </a>
                     </div>
                   </div>
