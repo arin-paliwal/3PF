@@ -85,7 +85,8 @@ const App = () => {
             }`}
             onClick={scrollTop}
           >
-            <i className="fas fa-arrow-up text-[#e37926] text-3xl"></i>
+            {/* <i className="fas fa-arrow-up text-[#e37926] text-3xl"></i> */}
+            <i class="fa-solid fa-arrow-turn-up text-[#e37926] text-4xl"></i>
           </button>
         </div>
       </div>
