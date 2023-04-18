@@ -46,13 +46,61 @@
 .Icons {
   position: absolute;
   top: 70%;
+  font-size:3.5vw;
   column-gap: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* Set a default font size for the icons */
+/* .Icons {
+  font-size: 3.5vw;
+} */
+
+/* Reduce the font size for smaller screens */
+@media (max-width: 768px) {
+  .Icons {
+    font-size: 5vw;
+  }
+}
+
+/* Adjust the column gap for smaller screens */
+@media (max-width: 480px) {
+  .Icons {
+    column-gap: 50px;
+  }
+}
+
+/* Center the icons vertically for smaller screens */
+@media (max-height: 600px) {
+  .Icons {
+    top: 50%;
+  }
+}
+
+/* Stack the icons on top of each other for smaller screens */
+@media (max-width: 360px) {
+  .Icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  span:not(:first-child):not(:last-child) {
+    margin: 10px 0;
+  }
+}
+
+/* Reduce the animation duration for smaller screens */
+@media (max-width: 320px) {
+  span:hover {
+    animation-duration: 0.1s;
+  }
+}
+
+
+
+
 .fa-brands{
-  font-size:3.5vw;
+  
 }
 
 span:not(:first-child):not(:last-child) {
