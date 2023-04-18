@@ -1,0 +1,85 @@
+/* html {
+  background: #222;
+  color: white;
+} */
+
+.Icons {
+  transition: all .125s ease-in-out;
+}
+
+@-moz-keyframes bump {
+  33% {
+    -moz-transform: scale(1.3);
+  }
+  66% {
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    -moz-transform: scale(1.0);
+  }
+}
+
+@-webkit-keyframes bump {
+  33% {
+    -webkit-transform: scale(1.3);
+  }
+  66% {
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@keyframes bump {
+  33% {
+    transform: scale(1.3);
+  }
+  66% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+.Icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-brands{
+  font-size:3vw;
+}
+
+span:not(:first-child):not(:last-child) {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+span:hover {
+  -webkit-animation: bump .25s ease-in-out;
+  -moz-animation: bump .25s ease-in-out;
+  animation: bump .25s ease-in-out;
+  cursor:pointer;
+}
+
+.fa-facebook-f:hover {
+  color: #3B5998;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-instagram:hover {
+  color: #BD081C;
+}
+.fa-linkedin-in:hover{
+    color: #0077b5;
+}
+.fa-github:hover{
+    color: #171715
+}

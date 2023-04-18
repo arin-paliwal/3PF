@@ -4,7 +4,10 @@ import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 import "./button.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import Icons from "./Icons";
+import '../index.css'
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
@@ -124,22 +127,29 @@ const Introduction = () => {
   });
     
   return (
-      <>
-        <Particles options={particlesConfigState} init={init} />
-        <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <About />
+    <>
+      <Particles options={particlesConfigState} init={init} />
+      <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
+        <Navbar />
+        <About />
+      </div>
+      {/* <AnimatedButtons/> */}
+      <div className="flex items-center justify-center gap-10">
+        <div className="Icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-github"></i>
         </div>
-        {/* <AnimatedButtons/> */}
-        <div className="flex justify-center xs:mt-10 md:mt-0">
-          <button className="btn-43 mt-10">
+        {/* <button className="btn-43 mt-10">
             <Link to="/about">
               <span className="old">Know More</span>
               <span className="new">About Me !</span>
             </Link>
-          </button>
-        </div>
-      </>
+          </button> */}
+      </div>
+    </>
   );
 };
 
