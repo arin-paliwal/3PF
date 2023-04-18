@@ -118,13 +118,6 @@ const handleTyping = () => {
 
 const currentWord = words[wordIndex];
 const displayText = currentWord.substring(0, letterIndex);
-
-
-
-
-
-
-
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <br></br>
@@ -139,7 +132,7 @@ const displayText = currentWord.substring(0, letterIndex);
         <div className="text-[#807d90] font-medium text-lg lg:text-2xl text-center mb-8 mt-[-20px]">
           I'm into
         </div>
-        <h2 className="text-secondary text-3xl sm:text-4xl lg:text-5xl text-center mb-8 h-[40px]  ">
+        <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl text-center mb-8 h-[40px]  ">
           {displayText}
         </h2>
       </motion.div>

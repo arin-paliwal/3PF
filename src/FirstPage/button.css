@@ -11,6 +11,7 @@
   background-image: none;
   border-color: #000;
   border: none;
+  position: absolute;
 
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -30,8 +31,8 @@
   outline: auto;
 }
 .btn-43 svg {
-  display: block;
-  vertical-align: middle;
+  /* display: block; */
+  /* vertical-align: middle; */
 }
 .btn-43 [hidden] {
   display: none;
