@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Icons from "./Icons";
 import '../index.css'
+import { styles } from "../styles";
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
@@ -134,20 +135,33 @@ const Introduction = () => {
         <About />
       </div>
       {/* <AnimatedButtons/> */}
-      <div className="flex items-center justify-center gap-10">
-        <div className="Icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-github"></i>
+
+      <div className="flex items-center justify-center mt-10 gap-10">
+        <div className=" flex Icons gap-7">
+          <a href="https://www.facebook.com/paliwal.arin">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/arin_paliwal">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/arin.paliwal/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/arinpaliwal/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/arin-paliwal">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
-        {/* <button className="btn-43 mt-10">
-            <Link to="/about">
-              <span className="old">Know More</span>
-              <span className="new">About Me !</span>
-            </Link>
-          </button> */}
+
+        <button className="btn-43 mt-10">
+          <Link to="/about">
+            <span className="old">Know More</span>
+            <span className="new">About Me !</span>
+          </Link>
+        </button>
       </div>
     </>
   );

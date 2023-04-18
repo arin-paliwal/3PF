@@ -32,10 +32,12 @@
     "react-router-dom": "^6.9.0",
     "react-tilt": "^0.1.4",
     "react-tsparticles": "^2.9.3",
+    "react-typewriter-effect": "^1.1.0",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.61.0",
     "three": "^0.150.1",
-    "tsparticles": "^2.9.3"
+    "tsparticles": "^2.9.3",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

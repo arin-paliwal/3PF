@@ -45,13 +45,14 @@
 
 .Icons {
   position: absolute;
-  top: 50%;
+  top: 70%;
+  column-gap: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .fa-brands{
-  font-size:3vw;
+  font-size:3.5vw;
 }
 
 span:not(:first-child):not(:last-child) {
@@ -81,5 +82,5 @@ span:hover {
     color: #0077b5;
 }
 .fa-github:hover{
-    color: #171715
+    color: #bcbc9f
 }
