@@ -216,7 +216,17 @@ import {
   useLocation,
 } from "react-router-dom";
 import Preloader from "./FirstPage/Preloader/preloader";
-
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from "./components";
 function AppContainer() {
   
   const [showRoutePreloader, setShowRoutePreloader] = useState(true);
@@ -242,10 +252,15 @@ function AppContainer() {
       {location.pathname === "/about" && showModelPreloader ? (
         <Preloader />
       ) : null}
-      
+      <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<App />} />
+        <Route path="/about" element={<Hero />} />
+        <Route path="/education" element={<Experience />} />
+        <Route path="/technologies" element={<Tech />} />
+        <Route path="/projects" element={<Works />} />
+        <Route path="/training&certificate" element={<Feedbacks />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

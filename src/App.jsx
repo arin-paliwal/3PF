@@ -66,7 +66,17 @@ const App = () => {
 
   return (
     <>
-      <div className=" overflow-x-hidden relative z-0 bg-primary">
+    <BrowserRouter>
+  <Navbar />
+  <Routes>
+    <Route path="/about" element={<About />} />
+    <Route path="/experience" element={<Experience />} />
+    <Route path="/works" element={<Works />} />
+    <Route path="/contact" element={<Contact />} />
+  </Routes>
+</BrowserRouter>
+
+      {/* <div className=" overflow-x-hidden relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
@@ -86,10 +96,10 @@ const App = () => {
             onClick={scrollTop}
           >
             {/* <i className="fas fa-arrow-up text-[#e37926] text-3xl"></i> */}
-            <i className="fa-solid fa-arrow-turn-up text-[#e37926] text-4xl"></i>
+            {/* <i className="fa-solid fa-arrow-turn-up text-[#e37926] text-4xl"></i>
           </button>
         </div>
-      </div>
+      </div> */} */}
     </>
   );
 };
