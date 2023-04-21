@@ -207,6 +207,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import LandingPage from "./FirstPage/LandingPage";
 import "./index.css";
+
 import './FirstPage/button.css'
 import {
   BrowserRouter,
@@ -230,9 +231,25 @@ import {
 } from "./components";
 function AppContainer() {
   
+  
   const [showRoutePreloader, setShowRoutePreloader] = useState(true);
   const [showModelPreloader, setShowModelPreloader] = useState(true);
   const location = useLocation();
+  const [showScroll, setShowScroll] = useState(false);
+  // for scrolling to top
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 10) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  window.addEventListener("scroll", checkScrollTop);
  
   useEffect(() => {
     setTimeout(() => {
