@@ -226,6 +226,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  AboutHero,
 } from "./components";
 function AppContainer() {
   
@@ -253,15 +254,17 @@ function AppContainer() {
         <Preloader />
       ) : null}
       <Navbar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<Hero />} />
-        <Route path="/education" element={<Experience />} />
-        <Route path="/technologies" element={<Tech />} />
-        <Route path="/projects" element={<Works />} />
-        <Route path="/training&certificate" element={<Feedbacks />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="mt-[40px] overflow-x-hidden">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={< AboutHero />} />
+          <Route path="/education" element={<Experience />} />
+          <Route path="/technologies" element={<Tech />} />
+          <Route path="/projects" element={<Works />} />
+          <Route path="/training&certificate" element={<Feedbacks />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </div>
   );
 }

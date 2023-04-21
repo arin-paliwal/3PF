@@ -25,6 +25,8 @@
     "react-tsparticles": "^2.9.3",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.61.0",
+    "styled-component": "^2.8.0",
+    "styled-components": "^5.3.9",
     "three": "^0.150.1",
     "tsparticles": "^2.9.3"
   },

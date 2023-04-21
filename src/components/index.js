@@ -7,18 +7,20 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import AboutHero from './abouthero';
 
 export {
   Hero,
   Navbar,
   About,
+  AboutHero,
   Tech,
   Experience,
   Works,
   Feedbacks,
   Contact,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
   StarsCanvas
 }
