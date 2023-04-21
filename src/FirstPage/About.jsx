@@ -128,7 +128,7 @@ const displayText = currentWord.substring(0, letterIndex);
       >
         <br />
         <p className={`font-bold text-[white] mt-10 text-2xl lg:text-5xl text-center mb-4 ${styles.sectionHeadText}.`}>
-          I'm <span className="text-[#e37926]">Arin Paliwal</span>
+          <span className="text-[#e37926]">Welcome to my Portfolio</span>
         </p>
         <div className="text-[#807d90] font-medium text-lg lg:text-2xl text-center mb-8 mt-[-20px]">
           I'm into
