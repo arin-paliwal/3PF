@@ -71,9 +71,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl   ${
-              scrolled ? "bg-primary" : "bg-transparent"
-            }  `}
+            } p-20 absolute top-20 right-0 mx-3 my-2 min-w-[140px] z-10 rounded-xl bg-primary`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
@@ -82,7 +80,7 @@ const Navbar = () => {
                   className={`${
                     active === nav.title ? "text-white" : "text-secondary"
                   }
-                  font-poppins font-medium cursor-pointer text-[16px]
+                  font-poppins font-medium cursor-pointer text-[24px]
                   `}
                   onClick={() => {
                     setToggle(!toggle);
