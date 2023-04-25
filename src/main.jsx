@@ -264,21 +264,28 @@ function AppContainer() {
     }
   }, [location.pathname]);
 
+   useEffect(() => {
+     const title = location.pathname.substring(1).replace("-", " ");
+     document.title = `Arin Paliwal | ${
+       title.charAt(0).toUpperCase() + title.slice(1)
+     }`;
+   }, [location.pathname]);
+
   return (
     <div>
       {showRoutePreloader ? <Preloader /> : null}
       {location.pathname === "/about" && showModelPreloader ? (
         <Preloader />
       ) : null}
-      <Navbar/>
+      <Navbar />
       <div className="mt-[40px] overflow-x-hidden">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutHero />} />
           <Route path="/education" element={<Experience />} />
-          <Route path="/technologies" element={<Tech />} />
+          <Route path="/skills" element={<Tech />} />
           <Route path="/projects" element={<Works />} />
-          <Route path="/training&certificate" element={<Feedbacks />} />
+          <Route path="/trainings" element={<Feedbacks />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
