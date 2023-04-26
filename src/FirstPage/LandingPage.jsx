@@ -7,6 +7,7 @@ import { loadFull } from "tsparticles";
 import { Link } from "react-router-dom";
 import '../index.css'
 import Socialicons from "./Socialicons";
+import nextPageButton from "./nextPageButton";
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
@@ -134,16 +135,9 @@ const Introduction = () => {
       </div>
       <div className="flex justify-center cursor-pointer ">
         <div className="items-center justify-center gap-10">
-          <Socialicons/>
-          {/* know more button about me */}
-
-          {/* <button className="btn-43 mt-[100px] ">
-            <Link to="/about">
-              <span className="old">Know More</span>
-              <span className="new">About Me !</span>
-            </Link>
-          </button> */}
+          <Socialicons />
         </div>
+        <nextPageButton/>
       </div>
     </>
   );
