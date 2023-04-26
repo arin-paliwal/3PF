@@ -1,134 +1,111 @@
-/* html {
-  background: #222;
-  color: white;
-} */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-.Icons {
-  transition: all .125s ease-in-out;
+.icons {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
 }
 
-@-moz-keyframes bump {
-  33% {
-    -moz-transform: scale(1.3);
-  }
-  66% {
-    -moz-transform: scale(0.8);
-  }
-  100% {
-    -moz-transform: scale(1.0);
-  }
+.wrapper {
+  display: flex;
+  align-items: center;
 }
 
-@-webkit-keyframes bump {
-  33% {
-    -webkit-transform: scale(1.3);
-  }
-  66% {
-    -webkit-transform: scale(0.8);
-  }
-  100% {
-    -webkit-transform: scale(1.0);
-  }
+.button {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #312e2e;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
 }
 
-@keyframes bump {
-  33% {
-    transform: scale(1.3);
-  }
-  66% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1.0);
-  }
+.button:hover {
+  width: 200px;
 }
 
-.Icons {
+.button:hover span {
+  transform: translateX(0);
+}
+
+.button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.5s ease-out;
+}
+
+.button:nth-child(1) .icon {
+  background: #4267b2;
+}
+
+.button:nth-child(2) .icon {
+  background: #1da1f2;
+}
+
+.button:nth-child(3) .icon {
+  background: #e1306c;
+}
+
+.button:nth-child(4) .icon {
+  background: #333;
+}
+
+.button:nth-child(5) .icon {
+  background: #ff0000;
+}
+
+.button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover .icon i {
+  color: #fff;
+}
+
+.button span {
   position: absolute;
-  top: 70%;
-  font-size:3.5vw;
-  column-gap: 100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 70px;
+  top: 0;
+  transform: translateX(100%);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  white-space: nowrap;
+  transition: all 0.3s ease-out;
 }
 
-/* Set a default font size for the icons */
-/* .Icons {
-  font-size: 3.5vw;
-} */
-
-/* Reduce the font size for smaller screens */
-@media (max-width: 768px) {
-  .Icons {
-    font-size: 5vw;
-  }
+.button:nth-child(1) span {
+  color: #4267b2;
 }
 
-/* Adjust the column gap for smaller screens */
-@media (max-width: 480px) {
-  .Icons {
-    column-gap: 50px;
-  }
+.button:nth-child(2) span {
+  color: #1da1f2;
 }
 
-/* Center the icons vertically for smaller screens */
-@media (max-height: 600px) {
-  .Icons {
-    top: 50%;
-  }
+.button:nth-child(3) span {
+  color: #e1306c;
 }
 
-/* Stack the icons on top of each other for smaller screens */
-@media (max-width: 360px) {
-  .Icons {
-    flex-direction: column;
-    align-items: center;
-  }
-  span:not(:first-child):not(:last-child) {
-    margin: 10px 0;
-  }
+.button:nth-child(4) span {
+  color: #eee9e9;
 }
 
-/* Reduce the animation duration for smaller screens */
-@media (max-width: 320px) {
-  span:hover {
-    animation-duration: 0.1s;
-  }
-}
-
-
-
-
-.fa-brands{
-  
-}
-
-span:not(:first-child):not(:last-child) {
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
-
-span:hover {
-  -webkit-animation: bump .25s ease-in-out;
-  -moz-animation: bump .25s ease-in-out;
-  animation: bump .25s ease-in-out;
-  cursor:pointer;
-}
-
-.fa-facebook-f:hover {
-  color: #3B5998;
-}
-
-.fa-twitter:hover {
-  color: #55acee;
-}
-
-.fa-instagram:hover {
-  color: #BD081C;
-}
-.fa-linkedin-in:hover{
-    color: #0077b5;
-}
-.fa-github:hover{
-    color: #bcbc9f
+.button:nth-child(5) span {
+  color: #ff0000;
 }
