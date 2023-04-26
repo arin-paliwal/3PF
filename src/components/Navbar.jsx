@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to="/about"
+          to="/"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -38,9 +38,9 @@ const Navbar = () => {
           }}
         >
           <img src={fplogo} alt="logo" className="w-20 h-20 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer gap-5 flex">
+          {/* <p className="text-white text-[18px] font-bold cursor-pointer gap-5 flex">
             Arin Paliwal &nbsp;
-          </p>
+          </p> */}
         </Link>
         <ul className="list-none hidden as:flex flex-row gap-10">
           {navLinks.map((nav) => (

@@ -10,78 +10,13 @@ import Twitter from "./Icons/twitter.png";
 import Instagram from "./Icons/instagram.png";
 import Facebook from "./Icons/facebook.png";
 const About = () => {
-  // const [loopNum, setLoopNum] = useState(0);
-  // const [isDeleting, setIsDeleting] = useState(false);
-  // const [text, setText] = useState("");
-  // const [delta, setDelta] = useState(80);
-  // const period = 400;
-
-  // useEffect(() => {
-  //   let ticker = setInterval(() => {
-  //     tick();
-  //   }, delta);
-  //   return () => {
-  //     clearInterval(ticker);
-  //   };
-  // }, [text]);
-
-  // const tick = () => {
-  //   let i = loopNum % toRotate.length;
-  //   let fullText = toRotate[i];
-  //   let updatedText = isDeleting
-  //     ? fullText.substring(0, text.length - 1)
-  //     : fullText.substring(0, text.length + 1);
-  //   setText(updatedText);
-  //   if (isDeleting) {
-  //     setDelta((prevDelta) => prevDelta / 2);
-  //   }
-  //   if (!isDeleting && updatedText === fullText) {
-  //     setIsDeleting(true);
-  //     setDelta(period);
-  //   } else if (isDeleting && updatedText === "") {
-  //     setIsDeleting(false);
-  //     setLoopNum(loopNum + 1);
-  //     setDelta(80);
-  //   }
-  //  };
-
-  // const toRotate = [
-  //   "Web Development",
-  //   "Data Structures & Algorithms",
-  //   "Graphics Designing",
-  //   "3D Models",
-  //   "Machine Learning",
-  // ];
-
-
-{/* <Typewriter
-  textStyle={{
-    fontFamily: "Red Hat Display",
-    color: "#3F3D56",
-    fontWeight: 500,
-    fontSize: "1.5em",
-  }}
-  startDelay={2000}
-  cursorColor="#3F3D56"
-  multiText={[
-    "Hey there, This is a type writer animation package",
-    "it consist of two types...",
-    "Single text display and multi text display",
-    "Fonts can be customized.",
-    "The type speed can be customized as well",
-  ]}
-  loop={true}
-  nextTextDelay={1000}
-  typeSpeed={30}
-/>; */}
 const [wordIndex, setWordIndex] = useState(0);
 const [letterIndex, setLetterIndex] = useState(0);
 const [isDeleting, setIsDeleting] = useState(false);
 const words = [
-  "Web Development",
-  "Data Structures & Algorithms",
+  "Full Stack Development",
+  "Data Structures",
   "UI/UX Designing",
-  "3D Models",
   "Machine Learning",
 ];
 const typingSpeed = 100;
@@ -127,8 +62,10 @@ const displayText = currentWord.substring(0, letterIndex);
         variants={textVariant()}
       >
         <br />
-        <p className={`font-bold text-[white] mt-10 text-2xl lg:text-5xl text-center mb-4 ${styles.sectionHeadText}.`}>
-          <span className="text-[#e37926]">Welcome to my Portfolio</span>
+        <p
+          className={`font-bold text-[white] mt-4 text-2xl lg:text-5xl text-center mb-4 ${styles.sectionHeadText}.`}
+        >
+            <span className="text-[#e37926]">I'm Arin Paliwal</span>
         </p>
         <div className="text-[#807d90] font-medium text-lg lg:text-2xl text-center mb-8 mt-[-20px]">
           I'm into
