@@ -6,6 +6,7 @@ import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
+import "./cssnextPageButton.scss";
 
 const ExperienceCard=({experience})=>(
   <VerticalTimelineElement
@@ -52,8 +53,16 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-      <br/>
-      <div>
+      <br />
+      <div></div>
+      <div className="portfolio-experiment flex justify-center mt-10">
+        <a href="/skills">
+          <span className="text">My Skills !</span>
+          <span className="line -right"></span>
+          <span className="line -top"></span>
+          <span className="line -left"></span>
+          <span className="line -bottom"></span>
+        </a>
       </div>
     </>
   );

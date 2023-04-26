@@ -71,7 +71,7 @@ const displayText = currentWord.substring(0, letterIndex);
           I'm into
         </div>
         <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl text-center mb-8 h-[40px]  ">
-          {/* {displayText} */}
+          {displayText}
         </h2>
       </motion.div>
       <br></br>

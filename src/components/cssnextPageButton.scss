@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-$thick : 4px;
+$thick : 3px;
 $pad : 0.7em;
 $extra : calc(#{$pad} * 1.2);
 $color : #e37926;
@@ -20,7 +20,7 @@ $color : #e37926;
 
     .text {
       // padding: 0 0.3em;
-      font-family: proxima-nova, sans-serif;
+      font-family: Poppins, sans-serif;
       transform: translate3d(0,$pad,0);
       display: block;
       transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;

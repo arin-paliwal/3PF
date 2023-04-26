@@ -37,7 +37,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={fplogo} alt="logo" className="w-20 h-20 object-contain" />
+          <img src={fplogo} alt="logo" className="w-25 h-20 object-contain" />
           {/* <p className="text-white text-[18px] font-bold cursor-pointer gap-5 flex">
             Arin Paliwal &nbsp;
           </p> */}

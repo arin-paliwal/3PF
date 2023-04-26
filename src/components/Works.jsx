@@ -69,6 +69,15 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+      <div className="portfolio-experiment flex justify-center mt-10">
+        <a href="/trainings">
+          <span className="text">My Certifications !</span>
+          <span className="line -right"></span>
+          <span className="line -top"></span>
+          <span className="line -left"></span>
+          <span className="line -bottom"></span>
+        </a>
+      </div>
     </>
   );
 }

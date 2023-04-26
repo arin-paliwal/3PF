@@ -3,8 +3,8 @@ import "./cssnextPageButton.scss";
 const nextPageButton = () => {
   return (
       <div className="portfolio-experiment">
-        <a>
-          <span className="text">Hover me</span>
+        <a href='/about'>
+          <span className="text">Explore About Me !</span>
           <span className="line -right"></span>
           <span className="line -top"></span>
           <span className="line -left"></span>

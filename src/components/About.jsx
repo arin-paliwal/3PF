@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import "./cssnextPageButton.scss";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -69,6 +70,15 @@ const About = () => {
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
+      </div>
+      <div className="portfolio-experiment flex justify-center mt-10">
+        <a href="/education">
+          <span className="text">Explore My Education !</span>
+          <span className="line -right"></span>
+          <span className="line -top"></span>
+          <span className="line -left"></span>
+          <span className="line -bottom"></span>
+        </a>
       </div>
     </>
   );
