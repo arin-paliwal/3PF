@@ -22,7 +22,7 @@
   width: 60px;
   margin: 0 5px;
   overflow: hidden;
-  background: #312e2e;
+  background: #aaa6c3;
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -65,7 +65,7 @@
 }
 
 .button:nth-child(5) .icon {
-  background: #ff0000;
+  background: #0A66C2;
 }
 
 .button .icon i {
@@ -79,7 +79,9 @@
 }
 
 .button span {
-  position: absolute;
+  position: absolute ;
+  align-items: center;
+  justify-content: center;
   left: 70px;
   top: 0;
   transform: translateX(100%);
@@ -91,21 +93,21 @@
 }
 
 .button:nth-child(1) span {
-  color: #4267b2;
+  color: #000;
 }
 
 .button:nth-child(2) span {
-  color: #1da1f2;
+  color: #000;
 }
 
 .button:nth-child(3) span {
-  color: #e1306c;
+  color: #000;
 }
 
 .button:nth-child(4) span {
-  color: #eee9e9;
+  color: #000;
 }
 
 .button:nth-child(5) span {
-  color: #ff0000;
+  color: #000;
 }
