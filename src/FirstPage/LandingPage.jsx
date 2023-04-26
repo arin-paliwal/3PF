@@ -20,12 +20,12 @@ const Introduction = () => {
           },
         },
         color: {
-          value: "#ffffff",
+          value: "#e37926",
         },
         shape: {
           type: "circle",
           stroke: {
-            width: 2,
+            width: 3,
             color: "#da5923",
           },
           polygon: {
