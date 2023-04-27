@@ -127,7 +127,7 @@ const Introduction = () => {
   });
     
   return (
-    <>
+    <div className="overflow-y-hidden overflow-x-hidden">
       <Particles options={particlesConfigState} init={init} />
       <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
         {/* <Navbar /> */}
@@ -141,7 +141,7 @@ const Introduction = () => {
       <div className="flex justify-center mt-10">
         <NextPageButton />
       </div>
-    </>
+    </div>
   );
 };
 
