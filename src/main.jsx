@@ -277,7 +277,10 @@ function AppContainer() {
       {location.pathname === "/about" && showModelPreloader ? (
         <Preloader />
       ) : null}
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
+
       <div className="mt-[40px] overflow-x-hidden">
         <Routes>
           <Route path="/" element={<LandingPage />} />

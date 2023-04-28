@@ -8,7 +8,7 @@ import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import "./cssnextPageButton.scss";
 
-const ExperienceCard=({experience})=>(
+const ExperienceCard=({experience})=>( // education
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
@@ -54,8 +54,7 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
       <br />
-      <div></div>
-      <div className="portfolio-experiment flex justify-center mt-10">
+      <div className="portfolio-experiment flex justify-center mt-8 p-6">
         <a href="/skills">
           <span className="text">My Skills !</span>
           <span className="line -right"></span>

@@ -20,7 +20,7 @@ const Tech = () => {
           </div>
         ))}
       </div>
-      <div className="portfolio-experiment flex justify-center mt-10">
+      <div className="portfolio-experiment flex justify-center mt-8 p-6">
         <a href="/projects">
           <span className="text">My Projects !</span>
           <span className="line -right"></span>

@@ -71,7 +71,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      <div className="portfolio-experiment flex justify-center mt-10">
+      <div className="portfolio-experiment flex justify-center p-6 mt-8">
         <a href="/education">
           <span className="text">Explore My Education !</span>
           <span className="line -right"></span>

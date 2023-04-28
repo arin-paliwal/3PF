@@ -62,7 +62,7 @@ const Feedbacks = () => {
           />
         ))}
       </div>
-      <div className="portfolio-experiment flex justify-center mt-10">
+      <div className="portfolio-experiment flex justify-center mt-8 p-6">
         <a href="/contact">
           <span className="text">Contact Me !</span>
           <span className="line -right"></span>

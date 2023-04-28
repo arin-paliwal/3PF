@@ -1,3 +1,5 @@
+// projects
+
 import React from 'react'
 import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
@@ -69,7 +71,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <div className="portfolio-experiment flex justify-center mt-10">
+      <div className="portfolio-experiment flex justify-center mt-8 p-6">
         <a href="/trainings">
           <span className="text">My Certifications !</span>
           <span className="line -right"></span>
