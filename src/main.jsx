@@ -277,7 +277,7 @@ function AppContainer() {
       {location.pathname === "/about" && showModelPreloader ? (
         <Preloader />
       ) : null}
-      <div>
+      <div className="py-10">
         <Navbar />
       </div>
 
