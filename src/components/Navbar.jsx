@@ -9,21 +9,32 @@ const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+useEffect(() => {
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 90) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 90) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+  const handleClick = (event) => {
+    const toggleMenu = document.getElementById("toggle-menu");
+    if (toggleMenu && !toggleMenu.contains(event.target)) {
+      setToggle(false);
+    }
+  };
 
-    window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", handleScroll);
+  document.addEventListener("mousedown", handleClick);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+    document.removeEventListener("mousedown", handleClick);
+  };
+}, [toggle]);
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}
@@ -59,7 +70,7 @@ const Navbar = () => {
         </ul>
 
         {/* for mobile navigation bar */}
-        <div
+        <div id="toggle-menu"
           className={`bg-primary as:hidden  flex flex-1 justify-end items-center`}
         >
           <img
