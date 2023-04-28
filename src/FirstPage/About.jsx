@@ -63,7 +63,7 @@ const displayText = currentWord.substring(0, letterIndex);
       >
         <br />
         <p
-          className={`font-bold text-[white] mt-4 text-2xl lg:text-5xl text-center mb-4 ${styles.sectionHeadText}.`}
+          className={`font-bold text-[white] mt-[-60px] text-2xl lg:text-5xl text-center mb-4 ${styles.sectionHeadText}.`}
         >
             <span className="text-[#e37926]">I'm Arin Paliwal</span>
         </p>
