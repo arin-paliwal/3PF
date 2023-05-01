@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useState, useEffect } from "react";
 import About from "./About";
+import Data from "./temp";
 const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -22,7 +23,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[40px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
@@ -31,8 +32,9 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      {isDesktop && <ComputersCanvas />}
-      <About />
+      {isDesktop ? <ComputersCanvas /> : <Data />}
+      {/* <ComputersCanvas/> */}
+      {/* <About /> */}
     </section>
   );
 };

@@ -73,7 +73,7 @@ const About = () => {
       </div>
       <div className="portfolio-experiment flex justify-center p-6 mt-8">
         <a href="/education">
-          <span className="text">Explore My Education !</span>
+          <span className="text">My Education !</span>
           <span className="line -right"></span>
           <span className="line -top"></span>
           <span className="line -left"></span>
