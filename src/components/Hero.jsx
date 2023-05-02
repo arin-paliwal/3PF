@@ -32,8 +32,8 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      {isDesktop ? <ComputersCanvas /> : <Data />}
-      {/* <ComputersCanvas/> */}
+      {/* {isDesktop ? <ComputersCanvas /> : <Data />} */}
+      <ComputersCanvas/>
       {/* <About /> */}
     </section>
   );

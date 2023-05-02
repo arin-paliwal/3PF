@@ -18,6 +18,7 @@ module.exports = {
       screens: {
         xs: "450px",
         as:"990px",
+        hs:"1024px"
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.jpg')",
