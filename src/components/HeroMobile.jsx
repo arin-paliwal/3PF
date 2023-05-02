@@ -31,7 +31,7 @@ import "./typo.css"
 
 const HeroMobile = () => {
   const [index, setIndex] = useState(0);
-  const texts = ["Bonjour", "Hello", "Namaste", "Hola", "Salve", "Konnichiwa"]; // an array of texts to display
+  const texts = ["Bonjour", "Hello", "Namaste", "Hola", "Salve", "Konnichiwa"]; // an array of texts to display 
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -46,18 +46,23 @@ const HeroMobile = () => {
   return (
     <div className="mt-0">
       <div
-        className={`${styles.paddingX} text-center justify-center inset-0 top-[40px] max-w-7xl mx-auto flex flex-row items-start`}
+        className={`${styles.paddingX} text-center justify-center inset-0 top-[40px] max-w-7xl mx-auto flex flex-row items-center`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#e37926]">Arin Paliwal</span>
             <br />
-            <div className="text-[#6b6a69] mt-10 mb-10">
-              {texts.map((text, i) => (
-                <span key={i} className={i === index ? "fade-in" : "fade-out"}>
-                  {text}
-                </span>
-              ))}
+            <div className="flex">
+              <div className="text-[#6b6a69] mt-10 mb-10">
+                {texts.map((text, i) => (
+                  <span
+                    key={i}
+                    className={i === index ? "fade-in" : "fade-out"}
+                  >
+                    {text}
+                  </span>
+                ))}
+              </div>
             </div>
           </h1>
         </div>
@@ -67,3 +72,10 @@ const HeroMobile = () => {
 };
 
 export default SectionWrapper(HeroMobile, "");
+
+
+
+
+
+
+
