@@ -12,7 +12,7 @@ const Navbar = () => {
 useEffect(() => {
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    if (scrollTop > 90) {
+    if (scrollTop > 40) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -37,7 +37,7 @@ useEffect(() => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto my-auto">
         <Link
@@ -49,10 +49,12 @@ useEffect(() => {
           }}
         >
           <img src={fplogo} alt="logo" className="w-28 h-25 object-contain" />
-          {/* <p className="text-white text-[18px] font-bold cursor-pointer gap-5 flex">
-            Arin Paliwal &nbsp;
-          </p> */}
         </Link>
+        {/* <div className="items-center">
+          <h2>
+            Hello
+          </h2>
+        </div> */} 
         <ul className="list-none hidden as:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
@@ -70,8 +72,9 @@ useEffect(() => {
         </ul>
 
         {/* for mobile navigation bar */}
-        <div id="toggle-menu"
-          className={`bg-primary as:hidden  flex flex-1 justify-end items-center`}
+        <div
+          id="toggle-menu"
+          className={`  bg-primary  as:hidden  flex flex-1 justify-end items-center `}
         >
           <img
             src={toggle ? close : menu}
