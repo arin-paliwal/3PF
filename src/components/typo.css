@@ -1,15 +1,94 @@
-.fade-in {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
+.typog {
+  font-family: 'poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.wrapper {
+  position: relative;
+}
+
+.wrapper .static-text {
+  color: #fff;
+  font-size: 60px;
+}
+
+.wrapper .dynamic-texts {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-texts li {
+  color: #7f7d7c;
+  /* list-style-type: none; */
+  font-size: 50px;
+  font-weight: 500;
+  /* position: absolute; */
+  top: 0;
+  left: 100%;
+  /* white-space: nowrap; */
+  animation: slide 8s linear infinite;
+  /* animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+}
+
+.dynamic-texts li:nth-child(1) {
+  animation-duration: 6s;
+}
+
+.dynamic-texts li:nth-child(2) {
+  animation-duration: 17s;
+}
+
+.dynamic-texts li:nth-child(3) {
+  animation-duration: 8s;
+}
+
+.dynamic-texts li:nth-child(4) {
+  animation-duration: 9s;
+}
+
+.dynamic-texts li:nth-child(5) {
+  animation-duration: 10s;
+}
+
+.dynamic-texts li:nth-child(6) {
+  animation-duration: 11s;
+}
+
+.dynamic-texts li:nth-child(7) {
+  animation-duration: 12s;
+}
+
+@keyframes slide {
+  100% {
+    left: -100%;
+  }
+}
+
+.dynamic-texts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
   width: 100%;
+  background-color: #121212;
+  border-left: 3px solid #e37926;
+  animation: typing 1.5s steps(6) infinite;
+  bottom: 0;
   display: inline-block;
-  text-align: center;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
