@@ -1,46 +1,46 @@
-import React,{useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {styles} from "../styles";
-import {navLinks} from '../constants'
-import { logo,menu,close } from "../assets";
-import fplogo from '../FirstPage/fplogo.svg';
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { logo, menu, close } from "../assets";
+import fplogo from "../FirstPage/fplogo.svg";
 
-const Navbar = () => {
-  const [active, setActive] = useState('');
+const NavbarForLP = () => {
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-useEffect(() => {
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    if (scrollTop > 40) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 40) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-  const handleClick = (event) => {
-    const toggleMenu = document.getElementById("toggle-menu");
-    if (toggleMenu && !toggleMenu.contains(event.target)) {
-      setToggle(false);
-    }
-  };
+    const handleClick = (event) => {
+      const toggleMenu = document.getElementById("toggle-menu");
+      if (toggleMenu && !toggleMenu.contains(event.target)) {
+        setToggle(false);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  document.addEventListener("mousedown", handleClick);
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClick);
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-    document.removeEventListener("mousedown", handleClick);
-  };
-}, [toggle]);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClick);
+    };
+  }, [toggle]);
 
   return (
     <nav
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-[#000000]"
+        scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto my-auto">
@@ -116,6 +116,6 @@ useEffect(() => {
       </div>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default NavbarForLP;
