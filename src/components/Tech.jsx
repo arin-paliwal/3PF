@@ -5,9 +5,8 @@ import { technologies } from "../constants";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
-import "./skillsMobile.css";
 import Skills from "./Skills";
-import CardsMobile from "./cardsMobile";
+import TM from "./TM";
 
 const Tech = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -25,7 +24,7 @@ const Tech = () => {
   }, []);
   return (
     <>
-      {isDesktop ? <Skills /> : <CardsMobile />}
+      {isDesktop ? <Skills /> : <TM />}
 
       <div className="portfolio-experiment flex justify-center mt-8 p-6">
         <a href="/projects">
