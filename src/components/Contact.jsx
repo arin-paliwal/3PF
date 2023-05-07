@@ -99,11 +99,6 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             ></textarea>
           </label>
-          <div className=" text-[white] flex-row">
-            <h1>or, Directly Contact Me:</h1><br></br>
-            <h1 className="text-secondary">Phone : +91 6393866066</h1>
-            <h1 className="text-secondary">Email : paliwalarin09@gmail.com</h1>
-          </div>
           <button
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-primary rounded-xl"
             type="submit"

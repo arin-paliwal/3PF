@@ -68,7 +68,10 @@ function AppContainer() {
     }`;
   }, [location.pathname]);
 
-  const backgroundColor = location.pathname === "/" ? "transparent" : "#000000";
+  const backgroundColor =
+    location.pathname === "/" || location.pathname === "/contact"
+      ? "transparent"
+      : "#000000";
 
   return (
     <div style={{ backgroundColor }}>
@@ -77,7 +80,11 @@ function AppContainer() {
         <Preloader />
       ) : null}
       <div className="py-10">
-        {location.pathname === "/" ? <NavbarForLP /> : <Navbar />}
+        {location.pathname === "/" || location.pathname === "/contact" ? (
+          <NavbarForLP />
+        ) : (
+          <Navbar />
+        )}
       </div>
 
       <div className="mt-[40px] overflow-x-hidden ">
@@ -88,12 +95,21 @@ function AppContainer() {
           <Route path="/skills" element={<Tech />} />
           <Route path="/projects" element={<Works />} />
           <Route path="/trainings" element={<Feedbacks />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/contact"
+            element={
+              <>
+                <StarsCanvas />
+                <Contact />
+              </>
+            }
+          />
         </Routes>
       </div>
     </div>
   );
 }
+
 
 ReactDOM.render(
   <BrowserRouter>
