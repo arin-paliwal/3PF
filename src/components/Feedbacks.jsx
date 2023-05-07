@@ -30,8 +30,8 @@ const FeedbackCard = ({ issuer, course, link, image }) => (
       </div>
     </div>
     <div className="mt-5">
-      <h3 className="text-white font-bold text-[24px]">{issuer}</h3>
-      <p className="mt-2 text-secondary text-[14px]">{course}</p>
+      <h3 className="text-white font-bold text-[24px]">{course}</h3>
+      <p className="mt-2 text-secondary text-[19px]">{issuer}</p>
     </div>
     <div className="mt-4 flex flex-wrap gap-2">
       {/* {tags.map((tag) => (

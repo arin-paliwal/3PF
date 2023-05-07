@@ -36,7 +36,7 @@ const TM = () => {
         <p className={styles.sectionSubText}>Technologies</p>
         <h2 className={styles.heroHeadText}>Skills.</h2>
       </motion.div>
-      <div className="mt-10 flex-wrap gap-10">
+      <div className="mt-10 flex flex-wrap gap-10">
         {technologies.map((technology) => (
           <div className="w-full h-28" key={technology.name}>
             <ServiceCard icon={technology.icon} />

@@ -1,6 +1,8 @@
 import {
     mobile,
     backend,
+    office,
+    cpp,
     creator,
     defaultProjectIcon,
     web,
@@ -30,7 +32,7 @@ import {
     carrent,
     jobit,
     tripguide,
-    webd, dsapython,dsa, a3d,
+    webd, dsapython, dsa, a3d,
     textflow,
     threejs,
 } from "../assets";
@@ -76,7 +78,7 @@ const services = [
         icon: coding,
     },
     {
-        title: "3D Models & Designing",
+        title: "UI/UX Designing",
         icon: uiux,
     },
 
@@ -108,6 +110,18 @@ const technologies = [
         icon: figma,
     },
     {
+        name: "C++",
+        icon: cpp,
+    },
+    {
+        name: "Office",
+        icon: office,
+    },
+    {
+        name: "python",
+        icon: python
+    },
+    {
         name: "Three JS",
         icon: threejs,
     },
@@ -116,19 +130,17 @@ const technologies = [
         icon: git,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "python",
-        icon: python
-    },
-    {
         name: "MongoDB",
         icon: mongodb,
     },
-    
-    ];
+    {
+        name: "Node JS",
+        icon: nodejs,
+    },
+
+
+
+];
 
 const experiences = [
     {
@@ -139,7 +151,7 @@ const experiences = [
         date: "May 2021 - Current",
         points: [
             "Persuing Engineering in Computer Science with specialization in Artificial Intelligence & Machine Learning.",
-            "Actively participating in extracurricular activities related to computer science, such as hackathons, coding competitions, or technology Clubs.",
+            "Actively participating in extracurricular activities related to computer science, such as hackathons, coding competitions, or technology clubs.",
             "I'm excited about the possibilities and opportunities that a career in computer science engineering can offer, and eager to continue learning and growing in this field."
             ,
         ],
@@ -149,7 +161,7 @@ const experiences = [
         company_name: "Mercy Memorial School",
         icon: MMS,
         iconBg: "#FFFFFF",
-        date: "May 2009 - May 2019",
+        date: "May 2019 - May 2021",
         points: [
             "Improved my knowledge about Computer Science & Programming.",
             "Learned to be more independent and responsible, as you had to manage your own time and prioritize your studies and activities.",
@@ -161,34 +173,21 @@ const experiences = [
         company_name: "Mercy Memorial School",
         icon: MMS,
         iconBg: "#FFFFFF",
-        date: "May 2019 - May 2021",
+        date: "May 2009 - May 2019 ",
         points: [
             "Enriched my knowledge of Java Programming Language & Computer System.",
             "Developed a passion for a Comuter Science and Software Development, and started exploring different career options or higher education opportunities.",
             "Implemented various basic HTML CSS JS Sites",
         ],
     },
-    // {
-    //     title: "Full stack Developer",
-    //     company_name: "Meta",
-    //     icon: meta,
-    //     iconBg: "#E6DEDD",
-    //     date: "Jan 2023 - Present",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
 ];
 
 const testimonials = [
     {
         issuer: "IIT Kharagpur",
         course: "Communication",
-        image:comm,
-        link:"https://drive.google.com/file/d/1BEj-biffh7b8LKiKKpT115LE-8-wFXlx/view?usp=sharing"
+        image: comm,
+        link: "https://drive.google.com/file/d/1BEj-biffh7b8LKiKKpT115LE-8-wFXlx/view?usp=sharing"
     },
     {
         issuer: "Udemy",
@@ -205,6 +204,7 @@ const testimonials = [
         course: "Data Structures & Algorithms in Java",
         image: dsajava,
     },
+    
     {
         issuer: "Infosys",
         course: "Data Structures & Algorithms in Python",
@@ -283,6 +283,31 @@ const projects = [
         ],
         image: todolist,
         source_code_link: "https://github.com/arin-paliwal/To-Do-List",
+    },
+    {
+        name: "Welthie",
+        description:
+            "The finance dashboard project is a web-based platform that provides a user-friendly interface for visualizing financial data. The finance dashboard helps businesses make informed decisions by providing real-time financial insights and forecasting capabilities.",
+        tags: [
+            {
+                name: "vite",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "machine-learning",
+                color: "green-text-gradient",
+            },
+            {
+                name: "express-js",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "charts",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: defaultProjectIcon,
+        source_code_link: "https://github.com/arin-paliwal/Wealthie",
     },
 ];
 
