@@ -285,7 +285,7 @@ const projects = [
         source_code_link: "https://github.com/arin-paliwal/To-Do-List",
     },
     {
-        name: "Welthie",
+        name: "wealthie",
         description:
             "The finance dashboard project is a web-based platform that provides a user-friendly interface for visualizing financial data. The finance dashboard helps businesses make informed decisions by providing real-time financial insights and forecasting capabilities.",
         tags: [
