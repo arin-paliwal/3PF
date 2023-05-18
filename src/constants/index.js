@@ -241,7 +241,7 @@ const projects = [
     {
         name: "ChatVibe",
         description:
-            "ChatVibe is a web application that allows users to interact with each other and share content. It include user profiles, messaging, commenting, liking, sharing, and creating or joining interest groups. It is using a MERN Technology with Modern UI.",
+            "ChatVibe is a web application that allows users to interact with each other and share content. It include user profiles, messaging, commenting, liking, sharing, and creating or joining interest groups. It is using a MERN Technology with Modern User Interface.",
         tags: [
             {
                 name: "react",
