@@ -11,7 +11,7 @@ import "./cssnextPageButton.scss";
 const ExperienceCard=({experience})=>( // education
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
-    contentArrowStyle={{ borderRight: "7px solid #232631" }}
+    contentArrowStyle={{ borderRight: "20px solid #232631" }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={

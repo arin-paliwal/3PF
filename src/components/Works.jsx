@@ -249,7 +249,7 @@ const ProjectCard = ({
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2] bg-black'
         } flex items-center justify-center min-w-[170px] 
-      h-[420px] cursor-pointer card-shadow  `}
+      h-[420px] cursor-pointer card-shadow `}
       onClick={() => handleClick(id)}>
       {/* <div
         className="absolute top-0 left-0 z-10 bg-jetLight 
@@ -333,7 +333,7 @@ const Projects = () => {
         <h2 className={styles.heroHeadText}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex text-secondary">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
