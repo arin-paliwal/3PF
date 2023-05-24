@@ -264,10 +264,10 @@ const ProjectCard = ({
       {active !== id ? (
         <div className="flex items-center justify-start pr-[4.5rem] ">
           <h3
-            className="text-primary font-extrabold  w-[200px] h-[30px] 
-        whitespace-nowrap sm:text-[27px] text-[15px]  tracking-[1px]
+            className="text-primary  w-[200px] h-[30px] 
+         sm:text-[27px] text-[15px]   
         absolute lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none z-20 bg-opacity-70 bg-">
+        leading-none z-20 bg-opacity-10">
             {name}
           </h3>
         </div>
