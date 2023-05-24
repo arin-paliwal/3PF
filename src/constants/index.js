@@ -214,6 +214,7 @@ const testimonials = [
 
 const projects = [
     {
+        id:'project-1',
         name: "Text Flow",
         description:
             "Text Flow application is a real-time messaging application built using the MERN stack (MongoDB, Express, React, Node.js) that allows users to send and receive messages in a chat interface. It has minimalistic User Interface and uses websockets for real-time communication between users.",
@@ -236,9 +237,11 @@ const projects = [
             },
         ],
         image: textflow,
-        source_code_link: "https://github.com/arin-paliwal/Text-Flow",
+        repo: "https://github.com/arin-paliwal/Text-Flow",
+        demo:"",
     },
     {
+        id:'project-2',
         name: "ChatVibe",
         description:
             "ChatVibe is a web application that allows users to interact with each other and share content. It include user profiles, messaging, commenting, liking, sharing, and creating or joining interest groups. It is using a MERN Technology with Modern User Interface.",
@@ -261,9 +264,11 @@ const projects = [
             },
         ],
         image: defaultProjectIcon,
-        source_code_link: "https://github.com/arin-paliwal/ChatVibe",
+        repo: "https://github.com/arin-paliwal/ChatVibe",
+        demo:"",
     },
     {
+        id:'project-3',
         name: "To-Do App",
         description:
             "An Web Application that allows users to add, edit, and delete tasks they want to work on, and also mark tasks as complete without deleting them. It offers CRUD operations & is styled by Material-UI",
@@ -282,9 +287,11 @@ const projects = [
             },
         ],
         image: todolist,
-        source_code_link: "https://github.com/arin-paliwal/To-Do-List",
+        repo: "https://github.com/arin-paliwal/To-Do-List",
+        demo:"",
     },
     {
+        id:'project-4',
         name: "wealthie",
         description:
             "The finance dashboard project is a web-based platform that provides a user-friendly interface for visualizing financial data. The finance dashboard helps businesses make informed decisions by providing real-time financial insights and forecasting capabilities.",
@@ -307,7 +314,8 @@ const projects = [
             },
         ],
         image: defaultProjectIcon,
-        source_code_link: "https://github.com/arin-paliwal/Wealthie",
+        repo: "https://github.com/arin-paliwal/Wealthie",
+        demo:"",
     },
 ];
 
