@@ -220,6 +220,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #e37746;
+  border-radius: 15px;
 }
 
 /* Handle on hover */
