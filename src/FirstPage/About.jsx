@@ -4,11 +4,6 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 // import Typewriter from 'typewriter-effect/dist/core';
 import { textVariant } from "../utils/motion";
-import Github from "./Icons/github.png";
-import LinkedIn from "./Icons/linkedin.png";
-import Twitter from "./Icons/twitter.png";
-import Instagram from "./Icons/instagram.png";
-import Facebook from "./Icons/facebook.png";
 const About = () => {
 const [wordIndex, setWordIndex] = useState(0);
 const [letterIndex, setLetterIndex] = useState(0);

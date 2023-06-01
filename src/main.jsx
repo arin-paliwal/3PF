@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import LandingPage from "./FirstPage/LandingPage";
 import "./index.css";
 
