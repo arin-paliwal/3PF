@@ -64,7 +64,7 @@ const About = () => {
       {/* <br></br> */}
       <br></br>
       <div className="mt-30">
-        <p className={styles.heroHeadText}>I'm into...</p>
+        <p className={styles.heroHeadText}>I'm into. </p>
       </div>
       <div className="mt-10 flex flex-wrap gap-10">
         {services.map((service, index) => (
