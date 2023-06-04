@@ -32,6 +32,7 @@ import {
     carrent,
     jobit,
     tripguide,
+    cinematic,
     webd, dsapython, dsa, a3d,
     textflow,
     threejs,
@@ -316,6 +317,33 @@ const projects = [
         image: defaultProjectIcon,
         repo: "https://github.com/arin-paliwal/Wealthie",
         demo:"",
+    },
+    {
+        id: 'project-5',
+        name: "Cinematic",
+        description:
+            "Cinematic is an open-source video-sharing platform, similar to YouTube. I have enhanced core functionalities like video playback controls, recommendations, subscriptions, and comments.",
+        tags: [
+            {
+                name: "vite",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "rapid-api",
+                color: "green-text-gradient",
+            },
+            {
+                name: "material-ui",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "vercel",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cinematic,
+        repo: "https://github.com/arin-paliwal/Cinematic",
+        demo: "https://cinematicplayer.vercel.app/",
     },
 ];
 
