@@ -2,6 +2,8 @@ import {
     mobile,
     backend,
     office,
+    open,
+    blockchain,
     cpp,
     creator,
     defaultProjectIcon,
@@ -66,23 +68,30 @@ export const navLinks = [
 ];
 
 const services = [
-    {
-        title: "Full Stack Web Development",
-        icon: webdevel,
-    },
-    {
-        title: "Data Strcutures & Algorithms",
-        icon: dsa,
-    },
-    {
-        title: "Machine Learning",
-        icon: coding,
-    },
-    {
-        title: "UI/UX Designing",
-        icon: uiux,
-    },
-
+  {
+    title: "Full Stack Development",
+    icon: webdevel,
+  },
+  {
+    title: "Data Structures & Algorithms",
+    icon: dsa,
+  },
+  {
+    title: "Machine Learning",
+    icon: coding,
+  },
+  {
+    title: "UI/UX Designing",
+    icon: uiux,
+  },
+  {
+    title: "Blockchain Development",
+    icon: blockchain,
+  },
+  {
+    title: "Open-Source Contributions",
+    icon: open,
+  },
 ];
 
 const technologies = [

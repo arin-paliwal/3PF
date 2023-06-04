@@ -37,11 +37,9 @@ const NavbarForLP = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      className={`${styles.paddingX
+        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto my-auto">
         <Link
@@ -63,9 +61,8 @@ const NavbarForLP = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? "text-[#e37926]" : "text-secondary"
-              }
+              className={`${active === nav.title ? "text-[#e37926]" : "text-secondary"
+                }
               hover:text-[#e37926] text-[18px]
               font-medium text-red cursor-pointer`}
               onClick={() => setActive(nav.title)}
@@ -78,9 +75,8 @@ const NavbarForLP = () => {
         {/* for mobile navigation bar */}
         <div
           id="toggle-menu"
-          className={`${
-            scrolled ? "bg-primary" : "bg-transparent"
-          } as:hidden  flex flex-1 justify-end items-center `}
+          className={`${scrolled ? "bg-primary" : "bg-transparent"
+            } as:hidden  flex flex-1 justify-end items-center `}
         >
           <img
             src={toggle ? close : menu}
@@ -89,17 +85,15 @@ const NavbarForLP = () => {
             onClick={() => setToggle(!toggle)}
           />
           <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-20 absolute top-20 right-0 mx-3 my-2 min-w-[140px] z-10 rounded-3xl bg-primary`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-20 absolute top-20 right-0 mx-3 my-2 min-w-[140px] z-10 rounded-3xl bg-primary`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }
+                  className={`${active === nav.title ? "text-white" : "text-secondary"
+                    }
                   font-poppins font-medium cursor-pointer text-[24px]
                   `}
                   onClick={() => {

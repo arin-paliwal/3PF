@@ -9,7 +9,7 @@ const Socialicons = () => {
             <div className="icon">
               <i className="fab fa-facebook-f"></i>
             </div>
-            <span>Facebook</span>
+            <span>paliwal.arin</span>
           </a>
         </div>
         <div className="button">
@@ -17,7 +17,7 @@ const Socialicons = () => {
             <div className="icon">
               <i className="fab fa-twitter"></i>
             </div>
-            <span>Twitter</span>
+            <span>arin_paliwal</span>
           </a>
         </div>
         <div className="button">
@@ -25,7 +25,7 @@ const Socialicons = () => {
             <div className="icon">
               <i className="fab fa-instagram"></i>
             </div>
-            <span>Instagram</span>
+            <span>arin.paliwal</span>
           </a>
         </div>
         <div className="button">
@@ -33,7 +33,7 @@ const Socialicons = () => {
             <div className="icon">
               <i className="fab fa-github"></i>
             </div>
-            <span>Github</span>
+            <span>arin-paliwal</span>
           </a>
         </div>
         <div className="button">
@@ -41,7 +41,7 @@ const Socialicons = () => {
             <div className="icon">
               <i className="fab fa-linkedin"></i>
             </div>
-            <span>LinkedIn</span>
+            <span>arinpaliwal</span>
           </a>
         </div>
       </div>

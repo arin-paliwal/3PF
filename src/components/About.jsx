@@ -42,13 +42,13 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
+        className="mt-4 text-secondary text-[19px] max-w-4xl leading-[30px]"
       >
         Welcome to my portfolio! My name is Arin Paliwal, and I am a passionate
         web developer, UI/UX developer, coder, and data structures and
         algorithms enthusiast. I am also a current engineering student pursuing
-        a degree in Machine Learning & Artificial Intelligence from Pranveer
-        Singh Institute of Technology. Throughout my journey as a web developer
+        a degree in <span className="text-[#e37926]">Machine Learning & Artificial Intelligence</span> from <span className="text-[#e37926]">Pranveer
+          Singh Institute of Technology</span>. Throughout my journey as a web developer
         and engineer, I have developed a keen eye for detail and a deep
         understanding of how to create engaging and intuitive user interfaces. I
         am always looking for new ways to improve my skills and stay up-to-date
