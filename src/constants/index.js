@@ -19,6 +19,7 @@ import {
     reactjs,
     redux,
     tailwind,
+    firebase,
     nodejs,
     mongodb,
     git,
@@ -37,6 +38,7 @@ import {
     cinematic,
     webd, dsapython, dsa, a3d,
     textflow,
+    nextjs,
     threejs,
 } from "../assets";
 
@@ -95,61 +97,66 @@ const services = [
 ];
 
 const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "java",
-        icon: java,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "C++",
-        icon: cpp,
-    },
-    {
-        name: "Office",
-        icon: office,
-    },
-    {
-        name: "python",
-        icon: python
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-
-
-
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Office",
+    icon: office,
+  },
+  {
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
 ];
 
 const experiences = [
