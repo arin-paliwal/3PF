@@ -161,6 +161,7 @@ const experiences = [
         date: "May 2021 - Current",
         points: [
             "Persuing Engineering in Computer Science with specialization in Artificial Intelligence & Machine Learning.",
+            "Qualified for special trainings in the college.",
             "Actively participating in extracurricular activities related to computer science, such as hackathons, coding competitions, or technology clubs.",
             "I'm excited about the possibilities and opportunities that a career in computer science engineering can offer, and eager to continue learning and growing in this field."
             ,
@@ -187,7 +188,7 @@ const experiences = [
         points: [
             "Enriched my knowledge of Java Programming Language & Computer System.",
             "Developed a passion for a Comuter Science and Software Development, and started exploring different career options or higher education opportunities.",
-            "Implemented various basic HTML CSS JS Sites",
+            "Implemented various basic HTML CSS JS sites and various basic algorithms",
         ],
     },
 ];
