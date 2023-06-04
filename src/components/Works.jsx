@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc';
-import { styles } from '../styles';
-import { github } from '../assets'
-import { projects } from '../constants';
-import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { github } from "../assets";
+import { projects } from "../constants";
+import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
 const ProjectCard = ({
   id,
@@ -19,11 +19,14 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-      className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2] bg-black'
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className={`relative ${active === id
+          ? "lg:flex-[3.5] flex-[10]"
+          : "lg:flex-[0.5] flex-[2] bg-black"
         } flex items-center justify-center min-w-[170px] 
       h-[420px] cursor-pointer card-shadow `}
-      onClick={() => handleClick(id)}>
+      onMouseEnter={() => handleClick(id)}
+    >
       <img
         src={image}
         alt={name}
@@ -34,22 +37,26 @@ const ProjectCard = ({
           <h3
             className="text-primary  w-[200px] h-[30px] 
          sm:text-[27px] text-[15px]   
-        absolute lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none z-20 bg-opacity-10">
-            {name}
+        absolute lg:bottom-[7rem] lg:origin-[0,0]
+        leading-none z-20 bg-opacity-0"
+          >
+            {/* {name} */}
           </h3>
         </div>
       ) : (
         <>
           <div
             className="absolute bottom-0 justify-start w-full 
-            flex-col  rounded-b-[24px] z-20   bg-opacity-20 backdrop-filter backdrop-blur-lg  p-4 rounded-lg shadow-lg">
+            flex-col  rounded-b-[24px] z-20 backdrop-filter bg-white p-4 rounded-lg shadow-lg"
+          >
             <div className="absolute inset-0 flex justify-end m-3 ">
               <div
-                onClick={() => window.open(repo, '_blank')}
+                onClick={() => window.open(repo, "_blank")}
                 className=" sm:w-11 sm:h-11 w-10 h-10 rounded-full 
+                bg-black
                   flex justify-center items-center cursor-pointer
-                  sm:opacity-[0.9] opacity-[0.8] ">
+                  sm:opacity-[0.9] opacity-[0.8] "
+              >
                 <img
                   src={github}
                   alt="source code"
@@ -60,13 +67,15 @@ const ProjectCard = ({
 
             <h2
               className="text-primary font-bold sm:text-[32px] text-[24px] 
-              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]">
+              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
+            >
               {name}
             </h2>
             <p
               className="text-primary sm:text-[14px] text-[16px] 
               max-w-3xl sm:leading-[24px] leading-[18px] 
-              cking-[1px]">
+              cking-[1px]"
+            >
               {description}
             </p>
           </div>
@@ -77,7 +86,7 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const [active, setActive] = useState('project-1');
+  const [active, setActive] = useState("project-1");
   const [shuffledProjects, setShuffledProjects] = useState([]);
 
   useEffect(() => {
@@ -86,7 +95,10 @@ const Projects = () => {
       const shuffledArray = [...projects];
       for (let i = shuffledArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+        [shuffledArray[i], shuffledArray[j]] = [
+          shuffledArray[j],
+          shuffledArray[i],
+        ];
       }
       return shuffledArray;
     };
@@ -103,8 +115,9 @@ const Projects = () => {
 
       <div className="w-full flex text-secondary">
         <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
+        >
           As I showcase my projects, I am excited to share the culmination of my
           hard work and dedication to the field of technology. Through these
           projects, I have honed my skills in programming, design, and project
@@ -120,8 +133,10 @@ const Projects = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        className={`${styles.innerWidth} mx-auto flex flex-col`}
+      >
+        {/* <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5"> */}
+        <div className="mt-[50px] grid lg:grid-cols-4 grid-cols-1 gap-5">
           {shuffledProjects.map((project, index) => (
             <ProjectCard
               key={project.id}
@@ -137,4 +152,4 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, 'projects');
+export default SectionWrapper(Projects, "projects");

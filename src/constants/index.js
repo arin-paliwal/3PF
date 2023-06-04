@@ -11,18 +11,21 @@ import {
     MMS,
     drive,
     javascript,
+    calculator,
     typescript,
     html,
     dsajava,
     comm,
     css,
     reactjs,
+    tic,
     redux,
     tailwind,
     firebase,
     nodejs,
     mongodb,
     git,
+    wealthieImg,
     java, python, webdevel, coding, uiux, a3dmodel,
     figma,
     docker,
@@ -231,137 +234,191 @@ const testimonials = [
 ];
 
 const projects = [
-    {
-        id:'project-1',
-        name: "Text Flow",
-        description:
-            "Text Flow application is a real-time messaging application built using the MERN stack (MongoDB, Express, React, Node.js) that allows users to send and receive messages in a chat interface. It has minimalistic User Interface and uses websockets for real-time communication between users.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "socket.io",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "express-js",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: textflow,
-        repo: "https://github.com/arin-paliwal/Text-Flow",
-        demo:"",
-    },
-    {
-        id:'project-2',
-        name: "ChatVibe",
-        description:
-            "ChatVibe is a web application that allows users to interact with each other and share content. It include user profiles, messaging, commenting, liking, sharing, and creating or joining interest groups. It is using a MERN Technology with Modern User Interface.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "material-ui",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "nodejs",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: defaultProjectIcon,
-        repo: "https://github.com/arin-paliwal/ChatVibe",
-        demo:"",
-    },
-    {
-        id:'project-3',
-        name: "To-Do App",
-        description:
-            "An Web Application that allows users to add, edit, and delete tasks they want to work on, and also mark tasks as complete without deleting them. It offers CRUD operations & is styled by Material-UI",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "material-ui",
-                color: "green-text-gradient",
-            },
-            {
-                name: "crud",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: todolist,
-        repo: "https://github.com/arin-paliwal/To-Do-List",
-        demo:"",
-    },
-    {
-        id:'project-4',
-        name: "wealthie",
-        description:
-            "The finance dashboard project is a web-based platform that provides a user-friendly interface for visualizing financial data. The finance dashboard helps businesses make informed decisions by providing real-time financial insights and forecasting capabilities.",
-        tags: [
-            {
-                name: "vite",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "machine-learning",
-                color: "green-text-gradient",
-            },
-            {
-                name: "express-js",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "charts",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: defaultProjectIcon,
-        repo: "https://github.com/arin-paliwal/Wealthie",
-        demo:"",
-    },
-    {
-        id: 'project-5',
-        name: "Cinematic",
-        description:
-            "Cinematic is an open-source video-sharing platform, similar to YouTube. I have enhanced core functionalities like video playback controls, recommendations, subscriptions, and comments.",
-        tags: [
-            {
-                name: "vite",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "rapid-api",
-                color: "green-text-gradient",
-            },
-            {
-                name: "material-ui",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "vercel",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: cinematic,
-        repo: "https://github.com/arin-paliwal/Cinematic",
-        demo: "https://cinematicplayer.vercel.app/",
-    },
+  {
+    id: "project-1",
+    name: "Text Flow",
+    description:
+      "Text Flow application is a real-time messaging application built using the MERN stack (MongoDB, Express, React, Node.js) that allows users to send and receive messages in a chat interface. It has minimalistic User Interface and uses websockets for real-time communication between users.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express-js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: textflow,
+    repo: "https://github.com/arin-paliwal/Text-Flow",
+    demo: "",
+  },
+  {
+    id: "project-2",
+    name: "ChatVibe",
+    description:
+      "ChatVibe is a web application that allows users to interact with each other and share content. It include user profiles, messaging, commenting, liking, sharing, and creating or joining interest groups. It is using a MERN Technology with Modern User Interface.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: defaultProjectIcon,
+    repo: "https://github.com/arin-paliwal/ChatVibe",
+    demo: "",
+  },
+  {
+    id: "project-3",
+    name: "To-Do App",
+    description:
+      "An Web Application that allows users to add, edit, and delete tasks they want to work on, and also mark tasks as complete without deleting them. It offers CRUD operations & is styled by Material-UI",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "crud",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: todolist,
+    repo: "https://github.com/arin-paliwal/To-Do-List",
+    demo: "",
+  },
+  {
+    id: "project-4",
+    name: "wealthie",
+    description:
+      "The finance dashboard project is a web-based platform that provides a user-friendly interface for visualizing financial data. The finance dashboard helps businesses make informed decisions by providing real-time financial insights and forecasting capabilities.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "machine-learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express-js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "charts",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wealthieImg,
+    repo: "https://github.com/arin-paliwal/Wealthie",
+    demo: "",
+  },
+  {
+    id: "project-5",
+    name: "Cinematic",
+    description:
+      "Cinematic is an open-source video-sharing platform, similar to YouTube. I have enhanced core functionalities like video playback controls, recommendations, subscriptions, and comments.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rapid-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cinematic,
+    repo: "https://github.com/arin-paliwal/Cinematic",
+    demo: "https://cinematicplayer.vercel.app/",
+  },
+  {
+    id: "project-6",
+    name: "Calculator",
+    description:
+      "An electronic calculator is typically a portable electronic device used to perform calculations, ranging from basic arithmetic to complex mathematics.This Calculator is made form HTML CSS JS.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "github",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: calculator,
+    repo: "https://github.com/arin-paliwal/Basic-Calculator",
+    demo: "https://arin-paliwal.github.io/Basic-Calculator/",
+  },
+  {
+    id: "project-7",
+    name: "Tic-Tac-Toe",
+    description:
+      "Game Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "github",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tic,
+    repo: "https://github.com/arin-paliwal/Tic-Tac-Toe",
+    demo: "https://arin-paliwal.github.io/To-Do-List/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
