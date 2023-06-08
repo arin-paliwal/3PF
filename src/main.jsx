@@ -25,6 +25,7 @@ import {
   StarsCanvas,
   AboutHero,
 } from "./components";
+import FirstPage from "./FirstPage/FirstPage";
 
 function AppContainer() {
   const [showRoutePreloader, setShowRoutePreloader] = useState(true);
@@ -62,9 +63,8 @@ function AppContainer() {
 
   useEffect(() => {
     const title = location.pathname.substring(1).replace("-", " ");
-    document.title = `Arin Paliwal | ${
-      title.charAt(0).toUpperCase() + title.slice(1)
-    }`;
+    document.title = `Arin Paliwal | ${title.charAt(0).toUpperCase() + title.slice(1)
+      }`;
   }, [location.pathname]);
 
   const backgroundColor =
@@ -85,7 +85,6 @@ function AppContainer() {
           <Navbar />
         )}
       </div>
-
       <div className="mt-[40px] overflow-x-hidden ">
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -103,6 +102,7 @@ function AppContainer() {
               </>
             }
           />
+          <Route path="*" element={<ErrorPage/>}/>
         </Routes>
       </div>
     </div>

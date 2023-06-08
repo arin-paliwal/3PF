@@ -5,50 +5,50 @@ import { styles } from "../styles";
 // import Typewriter from 'typewriter-effect/dist/core';
 import { textVariant } from "../utils/motion";
 const About = () => {
-const [wordIndex, setWordIndex] = useState(0);
-const [letterIndex, setLetterIndex] = useState(0);
-const [isDeleting, setIsDeleting] = useState(false);
-const words = [
-  "Full Stack Development",
-  "Data Structures",
-  "UI/UX Designing",
-  "Machine Learning",
-];
-const typingSpeed = 100;
-const deletingSpeed = 70 ;
-const pauseTime = 1000;
+  const [wordIndex, setWordIndex] = useState(0);
+  const [letterIndex, setLetterIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const words = [
+    "Full Stack Development",
+    "Data Structures",
+    "UI/UX Designing",
+    "Machine Learning",
+  ];
+  const typingSpeed = 100;
+  const deletingSpeed = 70;
+  const pauseTime = 1000;
 
-useEffect(() => {
-  const timeout = setTimeout(
-    () => {
-      handleTyping();
-    },
-    isDeleting ? deletingSpeed : typingSpeed
-  );
-  return () => clearTimeout(timeout);
-}, [letterIndex, isDeleting]);
+  useEffect(() => {
+    const timeout = setTimeout(
+      () => {
+        handleTyping();
+      },
+      isDeleting ? deletingSpeed : typingSpeed
+    );
+    return () => clearTimeout(timeout);
+  }, [letterIndex, isDeleting]);
 
-const handleTyping = () => {
-  const currentWord = words[wordIndex];
-  const currentLetter = currentWord[letterIndex];
+  const handleTyping = () => {
+    const currentWord = words[wordIndex];
+    const currentLetter = currentWord[letterIndex];
 
-  if (isDeleting) {
-    if (letterIndex === 0) {
-      setIsDeleting(false);
-      setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    if (isDeleting) {
+      if (letterIndex === 0) {
+        setIsDeleting(false);
+        setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+      } else {
+        setLetterIndex((prevIndex) => prevIndex - 1);
+      }
     } else {
-      setLetterIndex((prevIndex) => prevIndex - 1);
+      if (letterIndex === currentWord.length - 1) {
+        setIsDeleting(true);
+      }
+      setLetterIndex((prevIndex) => prevIndex + 1);
     }
-  } else {
-    if (letterIndex === currentWord.length - 1) {
-      setIsDeleting(true);
-    }
-    setLetterIndex((prevIndex) => prevIndex + 1);
-  }
-};
+  };
 
-const currentWord = words[wordIndex];
-const displayText = currentWord.substring(0, letterIndex);
+  const currentWord = words[wordIndex];
+  const displayText = currentWord.substring(0, letterIndex);
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <br></br>
@@ -60,7 +60,7 @@ const displayText = currentWord.substring(0, letterIndex);
         <p
           className={`font-bold text-[white] mt-[-60px] text-2xl lg:text-5xl text-center mb-4 ${styles.sectionHeadText}.`}
         >
-            <span className="text-[#e37926]">I'm Arin Paliwal</span>
+          <span className="text-[#e37926]">I'm Arin Paliwal</span>
         </p>
         <div className="text-[#807d90] font-medium text-lg lg:text-2xl text-center mb-8 mt-[-20px]">
           I'm into
