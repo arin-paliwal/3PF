@@ -1,6 +1,6 @@
 import React from 'react';
 import "./cssnextPageButton.scss";
-const nextPageButton = () => {
+const NextPageButton = () => {
   return (
       <div className="portfolio-experiment">
         <a href='/about'>
@@ -14,4 +14,4 @@ const nextPageButton = () => {
   );
 }
 
-export default nextPageButton;
+export default NextPageButton;
