@@ -26,6 +26,8 @@ import {
   AboutHero,
 } from "./components";
 import FirstPage from "./FirstPage/FirstPage";
+import ErrorPage from "./components/ErrorPage";
+import Payments from "./components/Payments";
 
 function AppContainer() {
   const [showRoutePreloader, setShowRoutePreloader] = useState(true);
@@ -33,11 +35,10 @@ function AppContainer() {
   const location = useLocation();
   const [showScroll, setShowScroll] = useState(false);
 
-  // for scrolling to top
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 10) {
+    if (!showScroll && window.scrollY > 10) {
       setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 400) {
+    } else if (showScroll && window.scrollY <= 400) {
       setShowScroll(false);
     }
   };
@@ -63,8 +64,9 @@ function AppContainer() {
 
   useEffect(() => {
     const title = location.pathname.substring(1).replace("-", " ");
-    document.title = `Arin Paliwal | ${title.charAt(0).toUpperCase() + title.slice(1)
-      }`;
+    document.title = `Arin Paliwal | ${
+      title.charAt(0).toUpperCase() + title.slice(1)
+    }`;
   }, [location.pathname]);
 
   const backgroundColor =
@@ -93,6 +95,7 @@ function AppContainer() {
           <Route path="/skills" element={<Tech />} />
           <Route path="/projects" element={<Works />} />
           <Route path="/trainings" element={<Feedbacks />} />
+          <Route path="/member" element={<Payments />} />
           <Route
             path="/contact"
             element={
@@ -102,13 +105,12 @@ function AppContainer() {
               </>
             }
           />
-          <Route path="*" element={<ErrorPage/>}/>
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
     </div>
   );
 }
-
 
 ReactDOM.render(
   <BrowserRouter>

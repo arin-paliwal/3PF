@@ -1,42 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-import { useState, useEffect } from "react";
-import About from "./About";
-import Data from "./temp";
 const Hero = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <div className="relative w-full h-[10rem]">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[40px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute top-[40px]  mx-auto flex flex-row items-start gap-5`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#e37926]">Arin Paliwal</span>
-            <br />
           </h1>
         </div>
       </div>
-      {/* {isDesktop ? <ComputersCanvas /> : <Data />} */}
-      <ComputersCanvas/>
-      {/* <About /> */}
-    </section>
+    </div>
   );
 };
-<About />;
 export default Hero;

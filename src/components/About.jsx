@@ -61,7 +61,6 @@ const About = () => {
         reach out to me if you have any questions or would like to work together
         on your next project.
       </motion.p>
-      {/* <br></br> */}
       <br></br>
       <div className="mt-30">
         <p className={styles.heroHeadText}>I'm into. </p>
