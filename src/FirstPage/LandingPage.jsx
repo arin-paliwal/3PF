@@ -6,8 +6,8 @@ import { loadFull } from "tsparticles";
 // import "./button.css";
 import { Link } from "react-router-dom";
 import '../index.css'
-import Socialicons from "./Socialicons.jsx";
-import NextPageButton from "./NextPageButton.jsx";
+import Socialicons from "./Socialicons";
+import NextPageButton from "./NextPageButton"
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
