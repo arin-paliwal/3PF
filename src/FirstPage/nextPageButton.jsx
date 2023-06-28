@@ -1,5 +1,5 @@
 import React from 'react';
-import "./cssnextPageButton.scss";
+// import "./cssnextPageButton.scss";
 const NextPageButton = () => {
   return (
       <div className="portfolio-experiment">

@@ -5,9 +5,9 @@ import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 // import "./button.css";
 import { Link } from "react-router-dom";
-import '../index.css'
+import '../index.css';
 import Socialicons from "./Socialicons";
-import NextPageButton from "./NextPageButton"
+import NextPageButton from "./NextPageButton";
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
