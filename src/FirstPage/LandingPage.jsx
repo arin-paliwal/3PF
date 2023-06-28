@@ -1,13 +1,10 @@
 import About from "./About";
 import Particles from "react-tsparticles";
-import Navbar from "./Navbar";
 import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
-// import "./button.css";
-import { Link } from "react-router-dom";
 import '../index.css';
 import Socialicons from "./Socialicons";
-import NextPageButton from "./NextPageButton";
+import NextPageButton from "./NextPageButton"
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
@@ -130,7 +127,6 @@ const Introduction = () => {
     <div className="overflow-y-hidden overflow-x-hidden">
       <Particles options={particlesConfigState} init={init} />
       <div className="relative z-[-1] bg-cover bg-no-repeat bg-center">
-        {/* <Navbar /> */}
         <About />
       </div>
       <div className="flex justify-center cursor-pointer ">
