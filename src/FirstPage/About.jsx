@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-// import Typewriter from 'typewriter-effect/dist/core';
 import { textVariant } from "../utils/motion";
 const About = () => {
   const [wordIndex, setWordIndex] = useState(0);
@@ -52,7 +50,7 @@ const About = () => {
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <br></br>
-      <motion.div
+      <div
         className="relative w-full max-w-screen-lg mx-auto px-4"
         variants={textVariant()}
       >
@@ -68,7 +66,7 @@ const About = () => {
         <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl text-center mb-8 h-[40px]  ">
           {displayText}
         </h2>
-      </motion.div>
+      </div>
       <br></br>
       {/* <div className="mt-10 flex justify-center gap-6 items-center">
         <a href="https://github.com/arin-paliwal">

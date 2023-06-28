@@ -1,18 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { styles } from "../styles";
-import Tilt from "react-tilt";
 import { drive, webd, dsapython, a3d } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 const FeedbackCard = ({ issuer, course, link, image }) => (
-  <Tilt
-    options={{
-      max: 45,
-      scale: 1,
-      speed: 450,
-    }}
+  <div
+    
     className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
   >
     <div className="relative w-full h-[230px]">
@@ -40,7 +34,7 @@ const FeedbackCard = ({ issuer, course, link, image }) => (
         </p>
       ))} */}
     </div>
-  </Tilt>
+  </div>
 );
 const Feedbacks = () => {
   return (
@@ -48,10 +42,10 @@ const Feedbacks = () => {
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
-        <motion.div variants={textVariant()}>
+        <div>
           <p className={styles.sectionSubText}>Knowledge</p>
           <h2 className={styles.sectionHeadText}>Trainings & Certificate.</h2>
-        </motion.div>
+        </div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((certificate, index) => (

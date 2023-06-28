@@ -13,21 +13,17 @@ import {
 } from "react-router-dom";
 import Preloader from "./FirstPage/Preloader/preloader";
 import {
-  About,
   Contact,
   Experience,
   Feedbacks,
-  Hero,
   Navbar,
   NavbarForLP,
-  Tech,
   Works,
-  StarsCanvas,
   AboutHero,
 } from "./components";
-import FirstPage from "./FirstPage/FirstPage";
 import ErrorPage from "./components/ErrorPage";
 import Payments from "./components/Payments";
+import Skills from "./components/Skills";
 
 function AppContainer() {
   const [showRoutePreloader, setShowRoutePreloader] = useState(true);
@@ -92,7 +88,7 @@ function AppContainer() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutHero />} />
           <Route path="/education" element={<Experience />} />
-          <Route path="/skills" element={<Tech />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Works />} />
           <Route path="/trainings" element={<Feedbacks />} />
           <Route path="/member" element={<Payments />} />
@@ -100,7 +96,6 @@ function AppContainer() {
             path="/contact"
             element={
               <>
-                <StarsCanvas />
                 <Contact />
               </>
             }

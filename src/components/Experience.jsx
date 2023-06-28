@@ -1,6 +1,5 @@
 import React from 'react'
 import { VerticalTimeline,VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
@@ -42,10 +41,10 @@ const ExperienceCard=({experience})=>( // education
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Qualifications</p>
         <h2 className={styles.heroHeadText}>Education.</h2>
-      </motion.div>
+      </div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (

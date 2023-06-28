@@ -1,6 +1,4 @@
 import React from "react";
-import Tilt from "react-tilt";
-import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -9,17 +7,17 @@ import "./cssnextPageButton.scss";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
-      <motion.div
+    <div className="xs:w-[250px] w-full">
+      <div
         // variants={fadeIn("right", "spring", 0.5 * index)}
         className="w-full p-[1px] rounded=[20px]"
       >
         <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
+          // options={{
+          //   max: 45,
+          //   scale: 1,
+          //   speed: 450,
+          // }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
@@ -27,19 +25,19 @@ const ServiceCard = ({ index, title, icon }) => {
             {title}
           </h3>
         </div>
-      </motion.div>
+      </div>
       {/* {title} */}
-    </Tilt>
+    </div>
   );
 };
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.heroHeadText}>Overview.</h2>
-      </motion.div>
-      <motion.p
+      </div>
+      <p
         // variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[19px] max-w-4xl leading-[30px]"
       >
@@ -59,7 +57,7 @@ const About = () => {
         you for taking the time to explore my portfolio, and please feel free to
         reach out to me if you have any questions or would like to work together
         on your next project.
-      </motion.p>
+      </p>
       <br></br>
       <div className="mt-30">
         <p className={styles.heroHeadText}>I'm into. </p>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -18,7 +17,7 @@ const ProjectCard = ({
   handleClick,
 }) => {
   return (
-    <motion.div
+    <div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${active === id
           ? "lg:flex-[3.5] flex-[10]"
@@ -81,7 +80,7 @@ const ProjectCard = ({
           </div>
         </>
       )}
-    </motion.div>
+    </div>
   );
 };
 
@@ -108,14 +107,13 @@ const Projects = () => {
 
   return (
     <div className="">
-      <motion.div variants={textVariant()}>
+      <div>
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.heroHeadText}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex text-secondary">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+        <p
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
         >
           As I showcase my projects, I am excited to share the culmination of my
@@ -125,17 +123,16 @@ const Projects = () => {
           ever-evolving field. Each project represents a unique challenge and an
           opportunity to innovate, and I am proud of the solutions I have
           created to solve real-world problems.
-        </motion.p>
+        </p>
       </div>
 
-      <motion.div
+      <div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        {/* <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5"> */}
         <div className="mt-[50px] grid lg:grid-cols-4 grid-cols-1 gap-5">
           {shuffledProjects.map((project, index) => (
             <ProjectCard
@@ -147,7 +144,7 @@ const Projects = () => {
             />
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
