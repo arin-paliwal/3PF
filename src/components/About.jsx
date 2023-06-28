@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index)}
+        // variants={fadeIn("right", "spring", 0.5 * index)}
         className="w-full p-[1px] rounded=[20px]"
       >
         <div
@@ -32,7 +32,6 @@ const ServiceCard = ({ index, title, icon }) => {
     </Tilt>
   );
 };
-
 const About = () => {
   return (
     <>
@@ -41,7 +40,7 @@ const About = () => {
         <h2 className={styles.heroHeadText}>Overview.</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        // variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[19px] max-w-4xl leading-[30px]"
       >
         Welcome to my portfolio! My name is Arin Paliwal, and I am a passionate
