@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { loadFull } from "tsparticles";
 import '../index.css';
 import Socialicons from "./Socialicons";
-import NextPageButton from "./NextPageButton"
+// import NextPageButton from "./NextPageButton"
 const Introduction = () => {
   useEffect(() => {
     setParticlesConfigState({
@@ -135,7 +135,7 @@ const Introduction = () => {
         </div>
       </div>
       <div className="flex justify-center mt-10">
-        <NextPageButton />
+        {/* <NextPageButton /> */}
       </div>
     </div>
   );
